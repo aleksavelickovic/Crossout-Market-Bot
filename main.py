@@ -23,12 +23,13 @@ GO_BACK_BUTTON_COORDS = (50, 111)  # Coordinates of the back button (adjust acco
 BUY_BUTTON_COORDS = (154, 983)
 SELL_BUTTON_COORDS = (734, 963)
 LONG_PRESS_COORDS = (802, 776)
+MARKET_TAB_COORDS = (396, 41)
 
 # OCR regions for BUY and SELL price fields
 SELL_PRICE_REGION = (182, 899, 110, 41)  # Sell price field coordinates
 BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
-MY_OFFERS_SALE_PRICE_REGION = (974, 375, 175, 45)
-MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 375, 175, 45)
+MY_OFFERS_SALE_PRICE_REGION = (974, 369, 175, 45)
+MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 369, 175, 45)
 LAST_PURCHASE_PRICE_REGION = (797, 405, 110, 41)
 
 # Global flag to check if we should stop the script
@@ -139,7 +140,7 @@ def adjust_sell_order(current_price, item_coords):
 
         print(f"Current market price: {market_price}")
 
-        if ((market_price * 0.90) - last_purchased_price) < 10:
+        if ((market_price * 0.90) - last_purchased_price) < 5:
             print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
             keyboard.press_and_release("esc")
             break
@@ -172,7 +173,7 @@ def adjust_sell_order(current_price, item_coords):
             print(f"Buy order adjusted to {new_price} coins.")
 
         else:
-            print(f"No higher bid found. Skipping buy order adjustment.")
+            print(f"No lower bid found. Skipping sell order adjustment.")
             keyboard.press_and_release("esc")
             break
 
@@ -193,90 +194,98 @@ def interact_with_my_offers():
     # Assuming there are 7 items, but adjust this number based on the actual number of items you have
     num_items = 7
     
-    for i in range(num_items): 
-        if stop_script:  # Check if the script should stop
-            print("Stopping script.")
-            break
+    while True:
+        for i in range(num_items): 
+            if stop_script:  # Check if the script should stop
+                print("Stopping script.")
+                return  # Exit the function instead of breaking the loop
 
-        print(f"Processing item {i + 1}...")
+            print(f"Processing item {i + 1}...")
 
-        # Adjust the regions for each iteration
-        sale_price_region = (MY_OFFERS_SALE_PRICE_REGION[0], MY_OFFERS_SALE_PRICE_REGION[1] + i * 80, MY_OFFERS_SALE_PRICE_REGION[2], MY_OFFERS_SALE_PRICE_REGION[3])
-        purchase_price_region = (MY_OFFERS_PURCHASE_PRICE_REGION[0], MY_OFFERS_PURCHASE_PRICE_REGION[1] + i * 80, MY_OFFERS_PURCHASE_PRICE_REGION[2], MY_OFFERS_PURCHASE_PRICE_REGION[3])
+            # Adjust the regions for each iteration
+            sale_price_region = (MY_OFFERS_SALE_PRICE_REGION[0], MY_OFFERS_SALE_PRICE_REGION[1] + i * 83, MY_OFFERS_SALE_PRICE_REGION[2], MY_OFFERS_SALE_PRICE_REGION[3])
+            purchase_price_region = (MY_OFFERS_PURCHASE_PRICE_REGION[0], MY_OFFERS_PURCHASE_PRICE_REGION[1] + i * 83, MY_OFFERS_PURCHASE_PRICE_REGION[2], MY_OFFERS_PURCHASE_PRICE_REGION[3])
 
-        sale_price = read_price_from_screen(sale_price_region)
-        purchase_price = read_price_from_screen(purchase_price_region)
+            sale_price = read_price_from_screen(sale_price_region)
+            purchase_price = read_price_from_screen(purchase_price_region)
 
-        if sale_price is None:
-            print("ITEM IS BEING BOUGHT")
-            # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
+            while isinstance(sale_price, float) and isinstance(purchase_price, float):
+                print("RESCANING THE PRICES!")
+                sale_price = read_price_from_screen(sale_price_region)
+                purchase_price = read_price_from_screen(purchase_price_region)
 
-            # Step 1: Right-click on the item to open the context menu
-            pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
-            pyautogui.rightClick()
-            print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+            if sale_price is None and purchase_price is None:
+                print("RESTARTING INTERACTIONS")
+                pyautogui.moveTo(MARKET_TAB_COORDS, duration=1)
+                pyautogui.click()
+                time.sleep(2)
+                interact_with_my_offers()
 
-            # Step 2: Click the "Trade" button to view the item's price
-            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
-            pyautogui.click()
-            print(f"Clicked on 'Trade' for item {i + 1}...")
+            if sale_price is None or not isinstance(sale_price, float):
+                print("ITEM IS BEING BOUGHT")
+                # Calculate the Y position based on the index (adjusting for offset of 50px between items)
+                item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
 
-            time.sleep(2)  # Give time for the trade screen to load
+                # Step 1: Right-click on the item to open the context menu
+                pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+                pyautogui.rightClick()
+                print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
 
-            # Step 3: Read the price of the item (using different regions for sell and buy)
-            current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
-            current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+                # Step 2: Click the "Trade" button to view the item's price
+                pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
+                pyautogui.click()
+                print(f"Clicked on 'Trade' for item {i + 1}...")
 
-            if current_sell_price is None or current_buy_price is None:
-                print(f"Couldn't read price for item {i + 1}. Skipping item.")
-                keyboard.press_and_release("esc")
-                continue
+                time.sleep(2)  # Give time for the trade screen to load
 
-            print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+                # Step 3: Read the price of the item (using different regions for sell and buy)
+                current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+                current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
 
-            if current_buy_price != purchase_price:
+                if current_sell_price is None or current_buy_price is None:
+                    print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                    keyboard.press_and_release("esc")
+                    continue
+
+                print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+
+                # if current_buy_price != purchase_price:
                 time.sleep(2)
                 adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust buy price based on the sell price
 
-        elif purchase_price is None:
-            print("ITEM IS BEING SOLD")
-        # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
+            elif purchase_price is None or not isinstance(purchase_price, float):
+                print("ITEM IS BEING SOLD")
+                # Calculate the Y position based on the index (adjusting for offset of 83px between items)
+                item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
 
-            # Step 1: Right-click on the item to open the context menu
-            pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
-            pyautogui.rightClick()
-            print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+                # Step 1: Right-click on the item to open the context menu
+                pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+                pyautogui.rightClick()
+                print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
 
-            # Step 2: Click the "Trade" button to view the item's price
-            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
-            pyautogui.click()
-            print(f"Clicked on 'Trade' for item {i + 1}...")
+                # Step 2: Click the "Trade" button to view the item's price
+                pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
+                pyautogui.click()
+                print(f"Clicked on 'Trade' for item {i + 1}...")
 
-            time.sleep(2)  # Give time for the trade screen to load
+                time.sleep(2)  # Give time for the trade screen to load
 
-            # Step 3: Read the price of the item (using different regions for sell and buy)
-            current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
-            current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+                # Step 3: Read the price of the item (using different regions for sell and buy)
+                current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+                current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
 
-            if current_sell_price is None or current_buy_price is None:
-                print(f"Couldn't read price for item {i + 1}. Skipping item.")
-                keyboard.press_and_release("esc")
-                continue
+                if current_sell_price is None or current_buy_price is None:
+                    print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                    keyboard.press_and_release("esc")
+                    continue
 
-            print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+                print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
 
-            if current_sell_price != sale_price:
+                # if current_sell_price != sale_price:
                 time.sleep(2)
                 adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust sell price based on the sell price
 
-        # Step 5: Go back to the previous screen after adjusting price
-        # pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
-        # pyautogui.click()
-        # print(f"Going back after adjusting item {i + 1}'s price...")
-
-        time.sleep(1)  # Wait before moving to the next item
+            time.sleep(1)  # Wait before moving to the next item
 
 # Function to listen for the stop button (Esc key)
 def listen_for_stop():
