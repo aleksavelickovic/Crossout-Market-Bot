@@ -16,19 +16,20 @@ MIN_PROFIT = 0.1  # Minimum profit in coins to continue buying/selling
 MARKET_FEE = 0.10  # 10% market fee on the sell price
 
 # Coordinates for UI elements (to be adjusted based on your screen layout)
-ITEM_CONTEXT_MENU_COORDS = (554, 395)  # Coordinates of the item in "My Offers" (right-click to open context menu)
-TRADE_BUTTON_COORDS = (548, 447)  # Coordinates of the "Trade" button (adjust accordingly)
+ITEM_CONTEXT_MENU_COORDS = (1722, 360)  # Coordinates of the item in "My Offers" (right-click to open context menu)
+TRADE_BUTTON_COORDS = (1725, 412)  # Coordinates of the "Trade" button (adjust accordingly)
 PRICE_FIELD_COORDS = (1078, 445)  # Coordinates of the price field in price adjusting tab (adjust accordingly)
 GO_BACK_BUTTON_COORDS = (50, 111)  # Coordinates of the back button (adjust accordingly)
 BUY_BUTTON_COORDS = (154, 983)
 SELL_BUTTON_COORDS = (734, 963)
+LONG_PRESS_COORDS = (802, 776)
 
 # OCR regions for BUY and SELL price fields
 SELL_PRICE_REGION = (182, 899, 110, 41)  # Sell price field coordinates
 BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
 MY_OFFERS_SALE_PRICE_REGION = (974, 375, 175, 45)
 MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 375, 175, 45)
-LONG_PRESS_COORDS = (802, 776)
+LAST_PURCHASE_PRICE_REGION = (797, 405, 110, 41)
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -62,6 +63,7 @@ def read_price_from_screen(region=None):
 
 # Function to adjust buy orders
 def adjust_buy_order(current_price, item_coords):
+    
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
@@ -121,6 +123,7 @@ def adjust_buy_order(current_price, item_coords):
 
 # Function to adjust sell orders
 def adjust_sell_order(current_price, item_coords):
+    
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
@@ -128,11 +131,18 @@ def adjust_sell_order(current_price, item_coords):
 
         # Read the current highest buy price from the screen
         market_price = read_price_from_screen(region=SELL_PRICE_REGION)
+        last_purchased_price = read_price_from_screen(region=LAST_PURCHASE_PRICE_REGION)
         if market_price is None:
             print("Could not read market price. Skipping adjustment.")
+            keyboard.press_and_release("esc")
             break
 
         print(f"Current market price: {market_price}")
+
+        if ((market_price * 0.90) - last_purchased_price) < 10:
+            print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
+            keyboard.press_and_release("esc")
+            break
 
         if market_price < current_price:
             # Calculate the new buy price (add 0.01 coins)
@@ -180,10 +190,10 @@ def cancel_order():
 
 # Function to differentiate and interact with each item in the "My Offers" tab
 def interact_with_my_offers():
-    # Assuming there are 10 items, but adjust this number based on the actual number of items you have
-    num_items = 10
+    # Assuming there are 7 items, but adjust this number based on the actual number of items you have
+    num_items = 7
     
-    for i in range(num_items):  
+    for i in range(num_items): 
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             break
@@ -200,7 +210,7 @@ def interact_with_my_offers():
         if sale_price is None:
             print("ITEM IS BEING BOUGHT")
             # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
+            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
 
             # Step 1: Right-click on the item to open the context menu
             pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
@@ -208,7 +218,7 @@ def interact_with_my_offers():
             print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
 
             # Step 2: Click the "Trade" button to view the item's price
-            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
             pyautogui.click()
             print(f"Clicked on 'Trade' for item {i + 1}...")
 
@@ -227,12 +237,12 @@ def interact_with_my_offers():
 
             if current_buy_price != purchase_price:
                 time.sleep(2)
-                adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust buy price based on the sell price
+                adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust buy price based on the sell price
 
         elif purchase_price is None:
             print("ITEM IS BEING SOLD")
         # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
+            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 83
 
             # Step 1: Right-click on the item to open the context menu
             pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
@@ -240,7 +250,7 @@ def interact_with_my_offers():
             print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
 
             # Step 2: Click the "Trade" button to view the item's price
-            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 83, duration=1)
             pyautogui.click()
             print(f"Clicked on 'Trade' for item {i + 1}...")
 
@@ -259,7 +269,7 @@ def interact_with_my_offers():
 
             if current_sell_price != sale_price:
                 time.sleep(2)
-                adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust sell price based on the sell price
+                adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust sell price based on the sell price
 
         # Step 5: Go back to the previous screen after adjusting price
         # pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
