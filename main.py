@@ -22,8 +22,8 @@ BUY_BUTTON_COORDS = (154, 983)
 SELL_BUTTON_COORDS = (734, 963)
 
 # OCR regions for BUY and SELL price fields
-SELL_PRICE_REGION = (187, 899, 75, 31)  # Sell price field coordinates
-BUY_PRICE_REGION = (755, 899, 75, 31)   # Buy price field coordinates
+SELL_PRICE_REGION = (187, 899, 81, 31)  # Sell price field coordinates
+BUY_PRICE_REGION = (755, 899, 81, 31)   # Buy price field coordinates
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -56,7 +56,7 @@ def read_price_from_screen(region=None):
         return None  # Return None if OCR didn't find a valid number
 
 # Function to adjust buy orders
-def adjust_buy_order(current_price):
+def adjust_buy_order(current_price, item_coords):
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
@@ -76,13 +76,15 @@ def adjust_buy_order(current_price):
 
             # Move to the price input field and update the price
             keyboard.press("esc")
+            pyautogui.moveTo(item_coords, duration=1)
+            pyautogui.click()
 
             pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
             pyautogui.click()
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
             pyautogui.press('backspace')  # Clear the text
             pyautogui.write(str(new_price))  # Write the new price
-            pyautogui.press('enter')  # Confirm the new price
+            #pyautogui.press('enter')  # Confirm the new price
 
             print(f"Buy order adjusted to {new_price} coins.")
 
@@ -94,7 +96,7 @@ def adjust_buy_order(current_price):
         time.sleep(2)
 
 # Function to adjust sell orders
-def adjust_sell_order(current_sell_price, current_buy_price):
+def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
@@ -117,13 +119,18 @@ def adjust_sell_order(current_sell_price, current_buy_price):
         if effective_sell_price > current_buy_price + MIN_PROFIT:
             keyboard.press("esc")
 
+
+            pyautogui.moveTo(item_coords, duration=1)
+            pyautogui.click()
             # Move to the price input field and update the price
+
+
             pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
             pyautogui.click()
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
             pyautogui.press('backspace')  # Clear the text
             pyautogui.write(str(new_sell_price))  # Write the new price
-            pyautogui.press('enter')  # Confirm the new price
+            #pyautogui.press('enter')  # Confirm the new price
 
             print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
         else:
@@ -180,9 +187,9 @@ def interact_with_my_offers():
 
         # Step 4: Adjust the price based on the price read
         if current_sell_price < current_buy_price:
-            adjust_buy_order(current_buy_price)  # Adjust buy price based on the sell price
+            adjust_buy_order(current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust buy price based on the sell price
         else:
-            adjust_sell_order(current_sell_price, current_buy_price)  # Adjust sell price based on the buy price
+            adjust_sell_order(current_sell_price, current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust sell price based on the buy price
 
         # Step 5: Go back to the previous screen after adjusting price
         pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
