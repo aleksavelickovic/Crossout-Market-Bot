@@ -108,7 +108,7 @@ def adjust_buy_order(current_price, item_coords):
             pyautogui.mouseDown()
             time.sleep(1)
             pyautogui.mouseUp()
-            time.sleep(2)
+            time.sleep(4)
             keyboard.press_and_release("esc")
 
             print(f"Buy order adjusted to {new_price} coins.")
@@ -119,7 +119,7 @@ def adjust_buy_order(current_price, item_coords):
             break
 
         # Wait a bit before making another adjustment (to avoid too many rapid clicks)
-        time.sleep(5)
+        time.sleep(2)
         break
 
 # Function to adjust sell orders
@@ -215,6 +215,7 @@ def interact_with_my_offers():
                 purchase_price = read_price_from_screen(purchase_price_region)
 
             if sale_price is None and purchase_price is None:
+                keyboard.press_and_release("esc")
                 print("RESTARTING INTERACTIONS")
                 pyautogui.moveTo(MARKET_TAB_COORDS, duration=1)
                 pyautogui.click()
