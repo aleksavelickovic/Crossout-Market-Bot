@@ -18,12 +18,13 @@ ITEM_CONTEXT_MENU_COORDS = (554, 389)  # Coordinates of the item in "My Offers" 
 TRADE_BUTTON_COORDS = (548, 447)  # Coordinates of the "Trade" button (adjust accordingly)
 PRICE_FIELD_COORDS = (1078, 445)  # Coordinates of the price field in price adjusting tab (adjust accordingly)
 GO_BACK_BUTTON_COORDS = (50, 111)  # Coordinates of the back button (adjust accordingly)
-BUY_BUTTON_COORDS = (154, 983)
-SELL_BUTTON_COORDS = (734, 963)
 
 # OCR regions for BUY and SELL price fields
 SELL_PRICE_REGION = (187, 899, 75, 31)  # Sell price field coordinates
 BUY_PRICE_REGION = (755, 899, 75, 31)   # Buy price field coordinates
+
+# New coordinates for long press to confirm the price change
+LONG_PRESS_COORDS = (802, 776)  # Coordinates for the long press to confirm price change
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -75,8 +76,6 @@ def adjust_buy_order(current_price):
             new_price = current_price + 0.01
 
             # Move to the price input field and update the price
-            keyboard.press("esc")
-
             pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
             pyautogui.click()
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
@@ -115,8 +114,6 @@ def adjust_sell_order(current_sell_price, current_buy_price):
         effective_sell_price = new_sell_price * (1 - MARKET_FEE)
 
         if effective_sell_price > current_buy_price + MIN_PROFIT:
-            keyboard.press("esc")
-
             # Move to the price input field and update the price
             pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
             pyautogui.click()
@@ -142,26 +139,20 @@ def cancel_order():
 
 # Function to differentiate and interact with each item in the "My Offers" tab
 def interact_with_my_offers():
-   # Assuming there are 10 items, but adjust this number based on the actual number of items you have
-    num_items = 10
-    
-    for i in range(num_items):  
+    for i in range(10):  # Adjust this based on the number of items in your offers
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             break
 
         print(f"Processing item {i + 1}...")
 
-        # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-        item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
-
         # Step 1: Right-click on the item to open the context menu
-        pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+        pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 50, duration=1)
         pyautogui.rightClick()
-        print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+        print(f"Right-clicking on item {i + 1}...")
 
         # Step 2: Click the "Trade" button to view the item's price
-        pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+        pyautogui.moveTo(TRADE_BUTTON_COORDS, duration=1)
         pyautogui.click()
         print(f"Clicked on 'Trade' for item {i + 1}...")
 
@@ -184,7 +175,31 @@ def interact_with_my_offers():
         else:
             adjust_sell_order(current_sell_price, current_buy_price)  # Adjust sell price based on the buy price
 
-        # Step 5: Go back to the previous screen after adjusting price
+        # Step 5: Press 'Escape' to go back to "My Offers"
+        pyautogui.press('esc')
+        time.sleep(1)
+
+        # Step 6: Left-click on the item to bring up the price editing window
+        pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 50, duration=1)
+        pyautogui.click()
+        print(f"Left-clicked on item {i + 1}...")
+
+        time.sleep(1)  # Wait for the price input field to be ready
+
+        # Step 7: Enter the new price (example - set new price as desired)
+        pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
+        pyautogui.press('backspace')  # Clear the text
+        new_price = current_sell_price + 0.01  # Set new price for example
+        pyautogui.write(str(new_price))  # Write the new price
+
+        # Step 8: Long press at the specified coordinates to confirm the price change
+        pyautogui.moveTo(LONG_PRESS_COORDS)
+        pyautogui.mouseDown()  # Start pressing
+        time.sleep(1)  # Hold for 1 second
+        pyautogui.mouseUp()  # Release the click
+        print(f"Long pressed to confirm price change for item {i + 1}...")
+
+        # Step 9: Go back to the previous screen after adjusting price
         pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
         pyautogui.click()
         print(f"Going back after adjusting item {i + 1}'s price...")
