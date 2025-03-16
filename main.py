@@ -1,0 +1,203 @@
+import pyautogui
+import pytesseract
+from PIL import Image
+import time
+import threading
+import keyboard  # To listen for key presses
+import re  # Regular expressions to clean and extract valid numbers
+
+# Set the path to Tesseract (if necessary for Windows)
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+# Define constants
+MIN_PROFIT = 10  # Minimum profit in coins to continue buying/selling
+MARKET_FEE = 0.10  # 10% market fee on the sell price
+
+# Coordinates for UI elements (to be adjusted based on your screen layout)
+ITEM_CONTEXT_MENU_COORDS = (554, 389)  # Coordinates of the item in "My Offers" (right-click to open context menu)
+TRADE_BUTTON_COORDS = (548, 447)  # Coordinates of the "Trade" button (adjust accordingly)
+PRICE_FIELD_COORDS = (1078, 445)  # Coordinates of the price field in price adjusting tab (adjust accordingly)
+GO_BACK_BUTTON_COORDS = (50, 111)  # Coordinates of the back button (adjust accordingly)
+
+# OCR regions for BUY and SELL price fields
+SELL_PRICE_REGION = (187, 899, 75, 31)  # Sell price field coordinates
+BUY_PRICE_REGION = (755, 899, 75, 31)   # Buy price field coordinates
+
+# Global flag to check if we should stop the script
+stop_script = False
+
+# Function to capture a screenshot of the region and use OCR to read it
+def read_price_from_screen(region=None):
+    # Capture screenshot of the specified region
+    screenshot = pyautogui.screenshot(region=region)
+    screenshot.save("screenshot.png")  # Save for debugging
+
+    # Use pytesseract to extract text (numbers) from the image
+    extracted_text = pytesseract.image_to_string(screenshot, config='--psm 6')
+
+    print(f"Extracted text: {extracted_text}")
+
+    # Preprocess the extracted text to remove unwanted characters (like spaces or non-numeric symbols)
+    extracted_text = re.sub(r'[^0-9.,]', '', extracted_text)  # Keep only numbers, commas, or periods
+
+    print(f"Processed text: {extracted_text}")
+
+    # Try to extract the first valid number from the OCR output
+    try:
+        # Replace commas with dots (for decimal points), if needed
+        extracted_text = extracted_text.replace(",", ".")
+
+        # Convert the cleaned-up text into a float
+        price = float(extracted_text.strip())  # Convert extracted text to a float
+        return price
+    except ValueError:
+        return None  # Return None if OCR didn't find a valid number
+
+# Function to adjust buy orders
+def adjust_buy_order(current_price):
+    while True:
+        if stop_script:  # Check if the script should stop
+            print("Stopping script.")
+            return
+
+        # Read the current highest buy price from the screen
+        market_price = read_price_from_screen(region=BUY_PRICE_REGION)
+        if market_price is None:
+            print("Could not read market price. Skipping adjustment.")
+            break
+
+        print(f"Current market price: {market_price}")
+
+        if market_price > current_price:
+            # Calculate the new buy price (add 0.01 coins)
+            new_price = current_price + 0.01
+
+            # Move to the price input field and update the price
+            pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
+            pyautogui.click()
+            pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
+            pyautogui.press('backspace')  # Clear the text
+            pyautogui.write(str(new_price))  # Write the new price
+            pyautogui.press('enter')  # Confirm the new price
+
+            print(f"Buy order adjusted to {new_price} coins.")
+
+        else:
+            print(f"No higher bid found. Skipping buy order adjustment.")
+            break
+
+        # Wait a bit before making another adjustment (to avoid too many rapid clicks)
+        time.sleep(2)
+
+# Function to adjust sell orders
+def adjust_sell_order(current_sell_price, current_buy_price):
+    while True:
+        if stop_script:  # Check if the script should stop
+            print("Stopping script.")
+            return
+
+        # Read the current lowest sell price from the screen
+        market_price = read_price_from_screen(region=SELL_PRICE_REGION)
+        if market_price is None:
+            print("Could not read market price. Skipping adjustment.")
+            break
+
+        print(f"Current market price: {market_price}")
+
+        # Calculate the effective sell price (subtract 0.01 coins)
+        new_sell_price = current_sell_price - 0.01
+
+        # Account for the market fee (10%)
+        effective_sell_price = new_sell_price * (1 - MARKET_FEE)
+
+        if effective_sell_price > current_buy_price + MIN_PROFIT:
+            # Move to the price input field and update the price
+            pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
+            pyautogui.click()
+            pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
+            pyautogui.press('backspace')  # Clear the text
+            pyautogui.write(str(new_sell_price))  # Write the new price
+            pyautogui.press('enter')  # Confirm the new price
+
+            print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
+        else:
+            print(f"No profit possible after fee. Cancelling sell order.")
+            cancel_order()  # Call cancel function
+            break
+
+        # Wait a bit before making another adjustment
+        time.sleep(2)
+
+# Function to cancel the order (simulates a click on the cancel button)
+def cancel_order():
+    pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+    pyautogui.click()
+    print("Order cancelled.")
+
+# Function to differentiate and interact with each item in the "My Offers" tab
+def interact_with_my_offers():
+   # Assuming there are 10 items, but adjust this number based on the actual number of items you have
+    num_items = 10
+    
+    for i in range(num_items):  
+        if stop_script:  # Check if the script should stop
+            print("Stopping script.")
+            break
+
+        print(f"Processing item {i + 1}...")
+
+        # Calculate the Y position based on the index (adjusting for offset of 50px between items)
+        item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
+
+        # Step 1: Right-click on the item to open the context menu
+        pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+        pyautogui.rightClick()
+        print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+
+        # Step 2: Click the "Trade" button to view the item's price
+        pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+        pyautogui.click()
+        print(f"Clicked on 'Trade' for item {i + 1}...")
+
+        time.sleep(2)  # Give time for the trade screen to load
+
+        # Step 3: Read the price of the item (using different regions for sell and buy)
+        current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+        current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+
+        if current_sell_price is None or current_buy_price is None:
+            print(f"Couldn't read price for item {i + 1}. Skipping item.")
+            keyboard.press("esc")
+            continue
+
+        print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+
+        # Step 4: Adjust the price based on the price read
+        if current_sell_price < current_buy_price:
+            adjust_buy_order(current_buy_price)  # Adjust buy price based on the sell price
+        else:
+            adjust_sell_order(current_sell_price, current_buy_price)  # Adjust sell price based on the buy price
+
+        # Step 5: Go back to the previous screen after adjusting price
+        pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+        pyautogui.click()
+        print(f"Going back after adjusting item {i + 1}'s price...")
+
+        time.sleep(1)  # Wait before moving to the next item
+
+# Function to listen for the stop button (Esc key)
+def listen_for_stop():
+    global stop_script
+    print("Press 'Esc' to stop the script.")
+    while True:
+        if keyboard.is_pressed("esc"):  # Check if 'Esc' is pressed
+            stop_script = True
+            break
+        time.sleep(0.1)  # Check every 0.1 seconds
+
+# Run the stop listening in a separate thread
+stop_thread = threading.Thread(target=listen_for_stop)
+stop_thread.start()
+
+# Start interacting with offers
+interact_with_my_offers()
