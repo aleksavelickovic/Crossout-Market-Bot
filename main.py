@@ -5,6 +5,8 @@ import time
 import threading
 import keyboard  # To listen for key presses
 import re  # Regular expressions to clean and extract valid numbers
+import cv2
+import numpy as np
 
 # Set the path to Tesseract (if necessary for Windows)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -22,8 +24,10 @@ BUY_BUTTON_COORDS = (154, 983)
 SELL_BUTTON_COORDS = (734, 963)
 
 # OCR regions for BUY and SELL price fields
-SELL_PRICE_REGION = (182, 899, 87, 31)  # Sell price field coordinates
-BUY_PRICE_REGION = (751, 899, 87, 31)   # Buy price field coordinates
+SELL_PRICE_REGION = (182, 899, 110, 41)  # Sell price field coordinates
+BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
+MY_OFFERS_SALE_PRICE_REGION = (974, 375, 175, 45)
+MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 375, 175, 45)
 LONG_PRESS_COORDS = (802, 776)
 
 # Global flag to check if we should stop the script
@@ -73,7 +77,7 @@ def adjust_buy_order(current_price, item_coords):
 
         if market_price > current_price:
             # Calculate the new buy price (add 0.01 coins)
-            new_price = current_price + 0.01
+            new_price = market_price + 0.01
 
             # Move to the price input field and update the price
             time.sleep(2)
@@ -100,6 +104,7 @@ def adjust_buy_order(current_price, item_coords):
 
         else:
             print(f"No higher bid found. Skipping buy order adjustment.")
+            keyboard.press_and_release("esc")
             break
 
         # Wait a bit before making another adjustment (to avoid too many rapid clicks)
@@ -107,13 +112,66 @@ def adjust_buy_order(current_price, item_coords):
         break
 
 # Function to adjust sell orders
-def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
+def adjust_sell_order(current_price, item_coords):
+    # while True:
+    #     if stop_script:  # Check if the script should stop
+    #         print("Stopping script.")
+    #         return
+
+    #     # Read the current lowest sell price from the screen
+    #     market_price = read_price_from_screen(region=SELL_PRICE_REGION)
+    #     if market_price is None:
+    #         print("Could not read market price. Skipping adjustment.")
+    #         break
+
+    #     print(f"Current market price: {market_price}")
+
+    #     # Calculate the effective sell price (subtract 0.01 coins)
+    #     new_sell_price = current_sell_price - 0.01
+
+    #     # Account for the market fee (10%)
+    #     effective_sell_price = new_sell_price * (1 - MARKET_FEE)
+
+    #     if effective_sell_price > current_buy_price + MIN_PROFIT:
+    #         time.sleep(2)
+    #         pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+    #         pyautogui.click()
+
+
+    #         pyautogui.moveTo(item_coords, duration=1)
+    #         pyautogui.click()
+    #         # Move to the price input field and update the price
+
+
+    #         pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
+    #         pyautogui.click()
+    #         pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
+    #         pyautogui.press('backspace')  # Clear the text
+    #         pyautogui.write(str(new_sell_price))  # Write the new price
+    #         #pyautogui.press('enter')  # Confirm the new price
+
+    #         pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
+    #         pyautogui.mouseDown()
+    #         time.sleep(1)
+    #         pyautogui.mouseUp()
+    #         time.sleep(2)
+    #         keyboard.press_and_release("esc")
+
+    #         print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
+    #     else:
+    #         print(f"No profit possible after fee. Cancelling sell order.")
+    #         cancel_order()  # Call cancel function
+    #         break
+
+    #     # Wait a bit before making another adjustment
+    #     time.sleep(5)
+    #     break
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             return
 
-        # Read the current lowest sell price from the screen
+        # Read the current highest buy price from the screen
         market_price = read_price_from_screen(region=SELL_PRICE_REGION)
         if market_price is None:
             print("Could not read market price. Skipping adjustment.")
@@ -121,30 +179,24 @@ def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
 
         print(f"Current market price: {market_price}")
 
-        # Calculate the effective sell price (subtract 0.01 coins)
-        new_sell_price = current_sell_price - 0.01
+        if market_price < current_price:
+            # Calculate the new buy price (add 0.01 coins)
+            new_price = market_price - 0.01
 
-        # Account for the market fee (10%)
-        effective_sell_price = new_sell_price * (1 - MARKET_FEE)
-
-        if effective_sell_price > current_buy_price + MIN_PROFIT:
+            # Move to the price input field and update the price
             time.sleep(2)
             pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
             pyautogui.click()
-
-
+            
             pyautogui.moveTo(item_coords, duration=1)
             pyautogui.click()
-            # Move to the price input field and update the price
-
 
             pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
             pyautogui.click()
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
             pyautogui.press('backspace')  # Clear the text
-            pyautogui.write(str(new_sell_price))  # Write the new price
+            pyautogui.write(str(new_price))  # Write the new price
             #pyautogui.press('enter')  # Confirm the new price
-
             pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
             pyautogui.mouseDown()
             time.sleep(1)
@@ -152,15 +204,18 @@ def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
             time.sleep(2)
             keyboard.press_and_release("esc")
 
-            print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
+            print(f"Buy order adjusted to {new_price} coins.")
+
         else:
-            print(f"No profit possible after fee. Cancelling sell order.")
-            cancel_order()  # Call cancel function
+            print(f"No higher bid found. Skipping buy order adjustment.")
+            keyboard.press_and_release("esc")
             break
 
-        # Wait a bit before making another adjustment
+        # Wait a bit before making another adjustment (to avoid too many rapid clicks)
         time.sleep(5)
         break
+
+    
 
 # Function to cancel the order (simulates a click on the cancel button)
 def cancel_order():
@@ -170,7 +225,7 @@ def cancel_order():
 
 # Function to differentiate and interact with each item in the "My Offers" tab
 def interact_with_my_offers():
-   # Assuming there are 10 items, but adjust this number based on the actual number of items you have
+    # Assuming there are 10 items, but adjust this number based on the actual number of items you have
     num_items = 10
     
     for i in range(num_items):  
@@ -180,39 +235,76 @@ def interact_with_my_offers():
 
         print(f"Processing item {i + 1}...")
 
+        # Adjust the regions for each iteration
+        sale_price_region = (MY_OFFERS_SALE_PRICE_REGION[0], MY_OFFERS_SALE_PRICE_REGION[1] + i * 80, MY_OFFERS_SALE_PRICE_REGION[2], MY_OFFERS_SALE_PRICE_REGION[3])
+        purchase_price_region = (MY_OFFERS_PURCHASE_PRICE_REGION[0], MY_OFFERS_PURCHASE_PRICE_REGION[1] + i * 80, MY_OFFERS_PURCHASE_PRICE_REGION[2], MY_OFFERS_PURCHASE_PRICE_REGION[3])
+
+        sale_price = read_price_from_screen(sale_price_region)
+        purchase_price = read_price_from_screen(purchase_price_region)
+
+        if sale_price is None:
+            print("ITEM IS BEING BOUGHT")
+            # Calculate the Y position based on the index (adjusting for offset of 50px between items)
+            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
+
+            # Step 1: Right-click on the item to open the context menu
+            pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+            pyautogui.rightClick()
+            print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+
+            # Step 2: Click the "Trade" button to view the item's price
+            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+            pyautogui.click()
+            print(f"Clicked on 'Trade' for item {i + 1}...")
+
+            time.sleep(2)  # Give time for the trade screen to load
+
+            # Step 3: Read the price of the item (using different regions for sell and buy)
+            current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+            current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+
+            if current_sell_price is None or current_buy_price is None:
+                print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                keyboard.press_and_release("esc")
+                continue
+
+            print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+
+            if current_buy_price != purchase_price:
+                time.sleep(2)
+                adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust buy price based on the sell price
+
+        elif purchase_price is None:
+            print("ITEM IS BEING SOLD")
         # Calculate the Y position based on the index (adjusting for offset of 50px between items)
-        item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
+            item_y_position = ITEM_CONTEXT_MENU_COORDS[1] + i * 70
 
-        # Step 1: Right-click on the item to open the context menu
-        pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
-        pyautogui.rightClick()
-        print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
+            # Step 1: Right-click on the item to open the context menu
+            pyautogui.moveTo(ITEM_CONTEXT_MENU_COORDS[0], item_y_position, duration=1)
+            pyautogui.rightClick()
+            print(f"Right-clicking on item {i + 1} at Y={item_y_position}...")
 
-        # Step 2: Click the "Trade" button to view the item's price
-        pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
-        pyautogui.click()
-        print(f"Clicked on 'Trade' for item {i + 1}...")
+            # Step 2: Click the "Trade" button to view the item's price
+            pyautogui.moveTo(TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1] + i * 70, duration=1)
+            pyautogui.click()
+            print(f"Clicked on 'Trade' for item {i + 1}...")
 
-        time.sleep(2)  # Give time for the trade screen to load
+            time.sleep(2)  # Give time for the trade screen to load
 
-        # Step 3: Read the price of the item (using different regions for sell and buy)
-        current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
-        current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+            # Step 3: Read the price of the item (using different regions for sell and buy)
+            current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+            current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
 
-        if current_sell_price is None or current_buy_price is None:
-            print(f"Couldn't read price for item {i + 1}. Skipping item.")
-            keyboard.press("esc")
-            continue
+            if current_sell_price is None or current_buy_price is None:
+                print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                keyboard.press_and_release("esc")
+                continue
 
-        print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
+            print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
 
-        # Step 4: Adjust the price based on the price read
-        if current_sell_price < current_buy_price:
-            time.sleep(2)
-            adjust_buy_order(current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust buy price based on the sell price
-        else:
-            time.sleep(2)
-            adjust_sell_order(current_sell_price, current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust sell price based on the buy price
+            if current_sell_price != sale_price:
+                time.sleep(2)
+                adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust sell price based on the sell price
 
         # Step 5: Go back to the previous screen after adjusting price
         # pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
@@ -234,6 +326,31 @@ def listen_for_stop():
 # Run the stop listening in a separate thread
 stop_thread = threading.Thread(target=listen_for_stop)
 stop_thread.start()
+def draw_regions_on_screen():
+    # Capture a screenshot
+    screenshot = pyautogui.screenshot()
+    screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
 
+    # Define the regions
+    regions = {
+        "SELL_PRICE_REGION": SELL_PRICE_REGION,
+        "BUY_PRICE_REGION": BUY_PRICE_REGION,
+        "MY_OFFERS_SALE_PRICE_REGION": MY_OFFERS_SALE_PRICE_REGION,
+        "MY_OFFERS_PURCHASE_PRICE_REGION": MY_OFFERS_PURCHASE_PRICE_REGION
+    }
+
+    # Draw rectangles for each region
+    for name, region in regions.items():
+        x, y, w, h = region
+        cv2.rectangle(screenshot, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.putText(screenshot, name, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+    # Display the screenshot with the drawn regions
+    cv2.imshow("Regions", screenshot)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+# Call the function to draw regions on the screen
+# draw_regions_on_screen()
 # Start interacting with offers
 interact_with_my_offers()
