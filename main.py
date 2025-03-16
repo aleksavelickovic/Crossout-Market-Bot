@@ -68,16 +68,24 @@ def adjust_buy_order(current_price, item_coords):
             return
 
         # Read the current highest buy price from the screen
-        market_price = read_price_from_screen(region=BUY_PRICE_REGION)
-        if market_price is None:
-            print("Could not read market price. Skipping adjustment.")
+        market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
+        market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+
+        if ((market_sell_price * 0.90) - market_buy_price) < 5:
+            print("Profit would be too small to raise the price!")
+            keyboard.press_and_release("esc")
             break
 
-        print(f"Current market price: {market_price}")
+        if market_buy_price is None:
+            print("Could not read market price. Skipping adjustment.")
+            keyboard.press_and_release("esc")
+            break
 
-        if market_price > current_price:
+        print(f"Current market price: {market_buy_price}")
+
+        if market_buy_price > current_price:
             # Calculate the new buy price (add 0.01 coins)
-            new_price = market_price + 0.01
+            new_price = market_buy_price + 0.01
 
             # Move to the price input field and update the price
             time.sleep(2)
@@ -113,59 +121,6 @@ def adjust_buy_order(current_price, item_coords):
 
 # Function to adjust sell orders
 def adjust_sell_order(current_price, item_coords):
-    # while True:
-    #     if stop_script:  # Check if the script should stop
-    #         print("Stopping script.")
-    #         return
-
-    #     # Read the current lowest sell price from the screen
-    #     market_price = read_price_from_screen(region=SELL_PRICE_REGION)
-    #     if market_price is None:
-    #         print("Could not read market price. Skipping adjustment.")
-    #         break
-
-    #     print(f"Current market price: {market_price}")
-
-    #     # Calculate the effective sell price (subtract 0.01 coins)
-    #     new_sell_price = current_sell_price - 0.01
-
-    #     # Account for the market fee (10%)
-    #     effective_sell_price = new_sell_price * (1 - MARKET_FEE)
-
-    #     if effective_sell_price > current_buy_price + MIN_PROFIT:
-    #         time.sleep(2)
-    #         pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
-    #         pyautogui.click()
-
-
-    #         pyautogui.moveTo(item_coords, duration=1)
-    #         pyautogui.click()
-    #         # Move to the price input field and update the price
-
-
-    #         pyautogui.moveTo(PRICE_FIELD_COORDS, duration=1)
-    #         pyautogui.click()
-    #         pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
-    #         pyautogui.press('backspace')  # Clear the text
-    #         pyautogui.write(str(new_sell_price))  # Write the new price
-    #         #pyautogui.press('enter')  # Confirm the new price
-
-    #         pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
-    #         pyautogui.mouseDown()
-    #         time.sleep(1)
-    #         pyautogui.mouseUp()
-    #         time.sleep(2)
-    #         keyboard.press_and_release("esc")
-
-    #         print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
-    #     else:
-    #         print(f"No profit possible after fee. Cancelling sell order.")
-    #         cancel_order()  # Call cancel function
-    #         break
-
-    #     # Wait a bit before making another adjustment
-    #     time.sleep(5)
-    #     break
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
