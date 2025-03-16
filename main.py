@@ -10,11 +10,11 @@ import re  # Regular expressions to clean and extract valid numbers
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Define constants
-MIN_PROFIT = 10  # Minimum profit in coins to continue buying/selling
+MIN_PROFIT = 0.1  # Minimum profit in coins to continue buying/selling
 MARKET_FEE = 0.10  # 10% market fee on the sell price
 
 # Coordinates for UI elements (to be adjusted based on your screen layout)
-ITEM_CONTEXT_MENU_COORDS = (554, 389)  # Coordinates of the item in "My Offers" (right-click to open context menu)
+ITEM_CONTEXT_MENU_COORDS = (554, 395)  # Coordinates of the item in "My Offers" (right-click to open context menu)
 TRADE_BUTTON_COORDS = (548, 447)  # Coordinates of the "Trade" button (adjust accordingly)
 PRICE_FIELD_COORDS = (1078, 445)  # Coordinates of the price field in price adjusting tab (adjust accordingly)
 GO_BACK_BUTTON_COORDS = (50, 111)  # Coordinates of the back button (adjust accordingly)
@@ -22,8 +22,9 @@ BUY_BUTTON_COORDS = (154, 983)
 SELL_BUTTON_COORDS = (734, 963)
 
 # OCR regions for BUY and SELL price fields
-SELL_PRICE_REGION = (187, 899, 81, 31)  # Sell price field coordinates
-BUY_PRICE_REGION = (755, 899, 81, 31)   # Buy price field coordinates
+SELL_PRICE_REGION = (182, 899, 87, 31)  # Sell price field coordinates
+BUY_PRICE_REGION = (751, 899, 87, 31)   # Buy price field coordinates
+LONG_PRESS_COORDS = (802, 776)
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -75,7 +76,10 @@ def adjust_buy_order(current_price, item_coords):
             new_price = current_price + 0.01
 
             # Move to the price input field and update the price
-            keyboard.press("esc")
+            time.sleep(2)
+            pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+            pyautogui.click()
+            
             pyautogui.moveTo(item_coords, duration=1)
             pyautogui.click()
 
@@ -85,6 +89,12 @@ def adjust_buy_order(current_price, item_coords):
             pyautogui.press('backspace')  # Clear the text
             pyautogui.write(str(new_price))  # Write the new price
             #pyautogui.press('enter')  # Confirm the new price
+            pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
+            pyautogui.mouseDown()
+            time.sleep(1)
+            pyautogui.mouseUp()
+            time.sleep(2)
+            keyboard.press_and_release("esc")
 
             print(f"Buy order adjusted to {new_price} coins.")
 
@@ -93,7 +103,8 @@ def adjust_buy_order(current_price, item_coords):
             break
 
         # Wait a bit before making another adjustment (to avoid too many rapid clicks)
-        time.sleep(2)
+        time.sleep(5)
+        break
 
 # Function to adjust sell orders
 def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
@@ -117,7 +128,9 @@ def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
         effective_sell_price = new_sell_price * (1 - MARKET_FEE)
 
         if effective_sell_price > current_buy_price + MIN_PROFIT:
-            keyboard.press("esc")
+            time.sleep(2)
+            pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+            pyautogui.click()
 
 
             pyautogui.moveTo(item_coords, duration=1)
@@ -132,6 +145,13 @@ def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
             pyautogui.write(str(new_sell_price))  # Write the new price
             #pyautogui.press('enter')  # Confirm the new price
 
+            pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
+            pyautogui.mouseDown()
+            time.sleep(1)
+            pyautogui.mouseUp()
+            time.sleep(2)
+            keyboard.press_and_release("esc")
+
             print(f"Sell order adjusted to {new_sell_price} coins (effective profit: {effective_sell_price - current_buy_price} coins).")
         else:
             print(f"No profit possible after fee. Cancelling sell order.")
@@ -139,7 +159,8 @@ def adjust_sell_order(current_sell_price, current_buy_price, item_coords):
             break
 
         # Wait a bit before making another adjustment
-        time.sleep(2)
+        time.sleep(5)
+        break
 
 # Function to cancel the order (simulates a click on the cancel button)
 def cancel_order():
@@ -187,14 +208,16 @@ def interact_with_my_offers():
 
         # Step 4: Adjust the price based on the price read
         if current_sell_price < current_buy_price:
+            time.sleep(2)
             adjust_buy_order(current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust buy price based on the sell price
         else:
+            time.sleep(2)
             adjust_sell_order(current_sell_price, current_buy_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 70))  # Adjust sell price based on the buy price
 
         # Step 5: Go back to the previous screen after adjusting price
-        pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
-        pyautogui.click()
-        print(f"Going back after adjusting item {i + 1}'s price...")
+        # pyautogui.moveTo(GO_BACK_BUTTON_COORDS, duration=1)
+        # pyautogui.click()
+        # print(f"Going back after adjusting item {i + 1}'s price...")
 
         time.sleep(1)  # Wait before moving to the next item
 
