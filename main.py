@@ -220,7 +220,8 @@ def interact_with_my_offers():
                 pyautogui.moveTo(MARKET_TAB_COORDS, duration=1)
                 pyautogui.click()
                 time.sleep(2)
-                interact_with_my_offers()
+                #interact_with_my_offers() // Breaking the loop instead of calling the function recursively to aviod a memory leak and reaching maximum recursion depth
+                break
 
             if sale_price is None or not isinstance(sale_price, float):
                 print("ITEM IS BEING BOUGHT")
