@@ -1,0 +1,493 @@
+PS E:\Fakultet\Projekti\Crossout Market Bot> & "C:/Program Files/Python313/python.exe" "e:/Fakultet/Projekti/Crossout Market Bot/main.py"
+Press 'Esc' to stop the script.
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 
+Processed text: 
+RESTARTING INTERACTIONS
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 600.10 ®
+
+Processed text: 600.10
+ITEM IS BEING BOUGHT
+Right-clicking on item 1 at Y=360...
+Clicked on 'Trade' for item 1...
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Extracted text: 600.13 ©
+
+Processed text: 600.13
+Item 1 sell price: 731.87, buy price: 600.13
+Extracted text: 600.13 ©
+
+Processed text: 600.13
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Current market price: 600.13
+Buy order adjusted to 600.14 coins.
+Processing item 2...
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: 
+Processed text: 
+ITEM IS BEING SOLD
+Right-clicking on item 2 at Y=443...
+Clicked on 'Trade' for item 2...
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 604.00 ©
+
+Processed text: 604.00
+Item 2 sell price: 629.79, buy price: 604.0
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 630.01 ©)
+
+Processed text: 630.01
+Current market price: 629.79
+PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!
+Processing item 3...
+Extracted text: 
+Processed text: 
+Extracted text: 1700.01 ®
+
+Processed text: 1700.01
+ITEM IS BEING BOUGHT
+Right-clicking on item 3 at Y=526...
+Clicked on 'Trade' for item 3...
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Item 3 sell price: 1889.0, buy price: 1700.01
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Profit would be too small to raise the price!
+Processing item 4...
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: y ff
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 4 at Y=609...
+Clicked on 'Trade' for item 4...
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.75 ©
+
+Processed text: 787.75
+Item 4 sell price: 949.98, buy price: 787.75
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.64 (9)
+
+Processed text: 787.649
+Current market price: 949.98
+No lower bid found. Skipping sell order adjustment.
+Processing item 5...
+Extracted text: ns
+
+Processed text:
+Extracted text: 
+Processed text: 
+RESTARTING INTERACTIONS
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 600.14 ®
+
+Processed text: 600.14
+ITEM IS BEING BOUGHT
+Right-clicking on item 1 at Y=360...
+Clicked on 'Trade' for item 1...
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Item 1 sell price: 731.87, buy price: 600.14
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Current market price: 600.14
+No higher bid found. Skipping buy order adjustment.
+Processing item 2...
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: =_7 . > |
+
+Processed text: 7.
+RESCANING THE PRICES!
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: =_7 . > |
+
+Processed text: 7.
+RESCANING THE PRICES!
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: y
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 2 at Y=443...
+Clicked on 'Trade' for item 2...
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 604.00 ©
+
+Processed text: 604.00
+Item 2 sell price: 629.79, buy price: 604.0
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 630.01 ©)
+
+Processed text: 630.01
+Current market price: 629.79
+PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!
+Processing item 3...
+Extracted text: 
+Processed text: 
+Extracted text: 1700.01 ®
+
+Processed text: 1700.01
+ITEM IS BEING BOUGHT
+Right-clicking on item 3 at Y=526...
+Clicked on 'Trade' for item 3...
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Item 3 sell price: 1889.0, buy price: 1700.01
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Profit would be too small to raise the price!
+Processing item 4...
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: y A
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 4 at Y=609...
+Clicked on 'Trade' for item 4...
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.75 ©
+
+Processed text: 787.75
+Item 4 sell price: 949.98, buy price: 787.75
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.64 (9)
+
+Processed text: 787.649
+Current market price: 949.98
+No lower bid found. Skipping sell order adjustment.
+Processing item 5...
+Extracted text: ns
+
+Processed text:
+Extracted text: A
+
+Processed text:
+RESTARTING INTERACTIONS
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 600.14 ®
+
+Processed text: 600.14
+ITEM IS BEING BOUGHT
+Right-clicking on item 1 at Y=360...
+Clicked on 'Trade' for item 1...
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Item 1 sell price: 731.87, buy price: 600.14
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Current market price: 600.14
+No higher bid found. Skipping buy order adjustment.
+Processing item 2...
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: P
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 2 at Y=443...
+Clicked on 'Trade' for item 2...
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 604.00 ©
+
+Processed text: 604.00
+Item 2 sell price: 629.79, buy price: 604.0
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 630.01 ©)
+
+Processed text: 630.01
+Current market price: 629.79
+PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!
+Processing item 3...
+Extracted text: 
+Processed text: 
+Extracted text: 1700.01 ®
+
+Processed text: 1700.01
+ITEM IS BEING BOUGHT
+Right-clicking on item 3 at Y=526...
+Clicked on 'Trade' for item 3...
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Item 3 sell price: 1889.0, buy price: 1700.01
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Profit would be too small to raise the price!
+Processing item 4...
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: y
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 4 at Y=609...
+Clicked on 'Trade' for item 4...
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.75 ©
+
+Processed text: 787.75
+Item 4 sell price: 949.98, buy price: 787.75
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.64 (9)
+
+Processed text: 787.649
+Current market price: 949.98
+No lower bid found. Skipping sell order adjustment.
+Processing item 5...
+Extracted text: ns
+
+Processed text:
+Extracted text: 
+Processed text: 
+RESTARTING INTERACTIONS
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 600.14 ®
+
+Processed text: 600.14
+ITEM IS BEING BOUGHT
+Right-clicking on item 1 at Y=360...
+Clicked on 'Trade' for item 1...
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Item 1 sell price: 731.87, buy price: 600.14
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Current market price: 600.14
+No higher bid found. Skipping buy order adjustment.
+Processing item 2...
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: 
+Processed text: 
+ITEM IS BEING SOLD
+Right-clicking on item 2 at Y=443...
+Clicked on 'Trade' for item 2...
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 604.00 ©
+
+Processed text: 604.00
+Item 2 sell price: 629.79, buy price: 604.0
+Extracted text: 629.79 ©
+
+Processed text: 629.79
+Extracted text: 630.01 ©)
+
+Processed text: 630.01
+Current market price: 629.79
+PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!
+Processing item 3...
+Extracted text: 
+Processed text: 
+Extracted text: 1700.01 ®
+
+Processed text: 1700.01
+ITEM IS BEING BOUGHT
+Right-clicking on item 3 at Y=526...
+Clicked on 'Trade' for item 3...
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Item 3 sell price: 1889.0, buy price: 1700.01
+Extracted text: 1700.01 @
+
+Processed text: 1700.01
+Extracted text: 1889.00 ¢
+
+Processed text: 1889.00
+Profit would be too small to raise the price!
+Processing item 4...
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: 7
+
+Processed text: 7
+RESCANING THE PRICES!
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: 7
+
+Processed text: 7
+RESCANING THE PRICES!
+Extracted text: 949.97 ®
+
+Processed text: 949.97
+Extracted text: 
+Processed text: 
+ITEM IS BEING SOLD
+Right-clicking on item 4 at Y=609...
+Clicked on 'Trade' for item 4...
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.75 ©
+
+Processed text: 787.75
+Item 4 sell price: 949.98, buy price: 787.75
+Extracted text: 949.98 ©
+
+Processed text: 949.98
+Extracted text: 787.64 (9)
+
+Processed text: 787.649
+Current market price: 949.98
+No lower bid found. Skipping sell order adjustment.
+Processing item 5...
+Extracted text: ns
+
+Processed text:
+Extracted text: 
+Processed text: 
+RESTARTING INTERACTIONS
+Processing item 1...
+Extracted text: 
+Processed text: 
+Extracted text: 600.14 ®
+
+Processed text: 600.14
+ITEM IS BEING BOUGHT
+Right-clicking on item 1 at Y=360...
+Clicked on 'Trade' for item 1...
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Item 1 sell price: 731.87, buy price: 600.14
+Extracted text: 600.14 ©
+
+Processed text: 600.14
+Extracted text: 731.87 ©
+
+Processed text: 731.87
+Current market price: 600.14
+No higher bid found. Skipping buy order adjustment.
+Processing item 2...
+Extracted text: 700.00 @
+
+Processed text: 700.00
+Extracted text: Cee
+
+Processed text:
+ITEM IS BEING SOLD
+Right-clicking on item 2 at Y=443...
+Clicked on 'Trade' for item 2...
+Extracted text: as
+
+Processed text:
+Extracted text: Paget 2:
+
+Processed text: 2
+Couldn't read price for item 2. Skipping item.
+Stopping script.
+PS E:\Fakultet\Projekti\Crossout Market Bot> 
