@@ -74,7 +74,7 @@ def adjust_buy_order(current_price, item_coords):
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 5:
+        if ((market_sell_price * 0.90) - market_buy_price) < 10:
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             break
@@ -140,7 +140,7 @@ def adjust_sell_order(current_price, item_coords):
 
         print(f"Current market price: {market_price}")
 
-        if ((market_price * 0.90) - last_purchased_price) < 5:
+        if ((market_price * 0.90) - last_purchased_price) < 2:
             print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
             keyboard.press_and_release("esc")
             break
