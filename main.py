@@ -7,6 +7,7 @@ import keyboard  # To listen for key presses
 import re  # Regular expressions to clean and extract valid numbers
 import cv2
 import numpy as np
+import datetime
 
 # Set the path to Tesseract (if necessary for Windows)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -30,7 +31,7 @@ SELL_PRICE_REGION = (182, 899, 110, 41)  # Sell price field coordinates
 BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
 MY_OFFERS_SALE_PRICE_REGION = (974, 369, 175, 45)
 MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 369, 175, 45)
-LAST_PURCHASE_PRICE_REGION = (797, 405, 110, 41)
+LAST_PURCHASE_PRICE_REGION = (785, 405, 110, 41)
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -74,7 +75,7 @@ def adjust_buy_order(current_price, item_coords):
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 10:
+        if ((market_sell_price * 0.90) - market_buy_price) < 25:
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             break
@@ -112,6 +113,10 @@ def adjust_buy_order(current_price, item_coords):
             keyboard.press_and_release("esc")
 
             print(f"Buy order adjusted to {new_price} coins.")
+            
+            with open("buy-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(f"{timestamp} - Buy order adjusted to {new_price} coins.\n")
 
         else:
             print(f"No higher bid found. Skipping buy order adjustment.")
@@ -140,7 +145,7 @@ def adjust_sell_order(current_price, item_coords):
 
         print(f"Current market price: {market_price}")
 
-        if ((market_price * 0.90) - last_purchased_price) < 2:
+        if ((market_price * 0.90) - last_purchased_price) < 1:
             print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
             keyboard.press_and_release("esc")
             break
@@ -162,7 +167,6 @@ def adjust_sell_order(current_price, item_coords):
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
             pyautogui.press('backspace')  # Clear the text
             pyautogui.write(str(new_price))  # Write the new price
-            #pyautogui.press('enter')  # Confirm the new price
             pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
             pyautogui.mouseDown()
             time.sleep(1)
