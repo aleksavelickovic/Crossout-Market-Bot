@@ -78,6 +78,9 @@ def adjust_buy_order(current_price, item_coords):
         if ((market_sell_price * 0.90) - market_buy_price) < 25:
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
+            with open("buy-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(timestamp + " - Profit would be too small to raise the price!\n")
             break
 
         if market_buy_price is None:
@@ -148,6 +151,9 @@ def adjust_sell_order(current_price, item_coords):
         if ((market_price * 0.90) - last_purchased_price) < 1:
             print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
             keyboard.press_and_release("esc")
+            with open("sell-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(timestamp + " - Profits would be too small if we decrease the price further!!!\n")
             break
 
         if market_price < current_price:
