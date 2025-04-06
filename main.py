@@ -157,7 +157,7 @@ def adjust_sell_order(current_price, item_coords):
             break
 
         if market_price < current_price:
-            # Calculate the new buy price (add 0.01 coins)
+            # Calculate the new buy price (subtract 0.01 coins)
             new_price = market_price - 0.01
 
             # Move to the price input field and update the price
