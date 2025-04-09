@@ -29,8 +29,8 @@ MARKET_TAB_COORDS = (396, 41)
 # OCR regions for BUY and SELL price fields
 SELL_PRICE_REGION = (182, 899, 110, 41)  # Sell price field coordinates
 BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
-MY_OFFERS_SALE_PRICE_REGION = (974, 369, 175, 45)
-MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 369, 175, 45)
+MY_OFFERS_SALE_PRICE_REGION = (970, 369, 121, 45)
+MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 369, 121, 45)
 LAST_PURCHASE_PRICE_REGION = (785, 405, 110, 41)
 
 # Global flag to check if we should stop the script
@@ -75,7 +75,7 @@ def adjust_buy_order(current_price, item_coords):
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 25:
+        if ((market_sell_price * 0.90) - market_buy_price) < 5:     #VRATITI U PRVOBITNO STANJE NAKON KUPOVINE NEOPHODNIH DELOVA
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             with open("buy-order-log.txt", "a") as log_file:
