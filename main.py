@@ -75,7 +75,7 @@ def adjust_buy_order(current_price, item_coords):
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 5:     #VRATITI U PRVOBITNO (OD-KOMENTARISATI) STANJE NAKON KUPOVINE NEOPHODNIH DELOVA (VRACENO)
+        if ((market_sell_price * 0.90) - market_buy_price) < 20:     #VRATITI U PRVOBITNO (OD-KOMENTARISATI) STANJE NAKON KUPOVINE NEOPHODNIH DELOVA (VRACENO)
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             with open("buy-order-log.txt", "a") as log_file:
