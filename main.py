@@ -83,19 +83,40 @@ def read_item_name_from_screen(region=None):
     # Return the cleaned-up item name
     return extracted_text.strip() if extracted_text.strip() else None
 
+# Function to load items to skip from a file
+def load_items_to_skip(file_path="items_to_skip.txt"):
+    try:
+        with open(file_path, "r") as file:
+            items = file.read().splitlines()
+            return [item.strip() for item in items if item.strip()]
+    except FileNotFoundError:
+        print(f"File {file_path} not found. No items will be skipped.")
+        return []
+
+# Load the items to skip
+items_to_skip = load_items_to_skip()
+
 # Function to adjust buy orders
 def adjust_buy_order(current_price, item_coords):
-    
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             return
 
+        # Read the item name from the screen
+        item_name = read_item_name_from_screen(region=ITEM_CONTEXT_MENU_COORDS)
+        if item_name in items_to_skip:
+            print(f"Skipping adjustment for item: {item_name}")
+            with open("buy-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(timestamp + " - Skipping adjustment for item " + item_name + " as per user request\n")
+            break
+
         # Read the current highest buy price from the screen
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 20:     #VRATITI U PRVOBITNO (OD-KOMENTARISATI) STANJE NAKON KUPOVINE NEOPHODNIH DELOVA (VRACENO)
+        if ((market_sell_price * 0.90) - market_buy_price) < 20:
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             with open("buy-order-log.txt", "a") as log_file:
@@ -127,7 +148,6 @@ def adjust_buy_order(current_price, item_coords):
             pyautogui.hotkey('ctrl', 'a')  # Select all text in price field
             pyautogui.press('backspace')  # Clear the text
             pyautogui.write(str(new_price))  # Write the new price
-            #pyautogui.press('enter')  # Confirm the new price
             pyautogui.moveTo(LONG_PRESS_COORDS, duration=1)
             pyautogui.mouseDown()
             time.sleep(1)
@@ -152,11 +172,19 @@ def adjust_buy_order(current_price, item_coords):
 
 # Function to adjust sell orders
 def adjust_sell_order(current_price, item_coords):
-    
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             return
+
+        # Read the item name from the screen
+        item_name = read_item_name_from_screen(region=ITEM_CONTEXT_MENU_COORDS)
+        if item_name in items_to_skip:
+            print(f"Skipping adjustment for item: {item_name}")
+            with open("sell-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(timestamp + " - Skipping adjustment for item " + item_name + " as per user request\n")
+            break
 
         # Read the current highest buy price from the screen
         market_price = read_price_from_screen(region=SELL_PRICE_REGION)
@@ -169,15 +197,15 @@ def adjust_sell_order(current_price, item_coords):
         print(f"Current market price: {market_price}")
 
         if ((market_price * 0.90) - last_purchased_price) < 1:
-            print("PROFITS WOULD BE TOO SMALL IF WE DECREASE THE PRICE FURTHER!!!!!!!!")
+            print("Profits would be too small if we decrease the price further!")
             keyboard.press_and_release("esc")
             with open("sell-order-log.txt", "a") as log_file:
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                log_file.write(timestamp + " - Profits would be too small if we decrease the price further!!!\n")
+                log_file.write(timestamp + " - Profits would be too small if we decrease the price further!\n")
             break
 
         if market_price < current_price:
-            # Calculate the new buy price (subtract 0.01 coins)
+            # Calculate the new sell price (subtract 0.01 coins)
             new_price = market_price - 0.01
 
             # Move to the price input field and update the price
@@ -200,7 +228,7 @@ def adjust_sell_order(current_price, item_coords):
             time.sleep(2)
             keyboard.press_and_release("esc")
 
-            print(f"Buy order adjusted to {new_price} coins.")
+            print(f"Sell order adjusted to {new_price} coins.")
 
         else:
             print(f"No lower bid found. Skipping sell order adjustment.")
