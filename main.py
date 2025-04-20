@@ -63,6 +63,26 @@ def read_price_from_screen(region=None):
     except ValueError:
         return None  # Return None if OCR didn't find a valid number
 
+
+# Function to capture a screenshot of the region and use OCR to read item names
+def read_item_name_from_screen(region=None):
+    # Capture screenshot of the specified region
+    screenshot = pyautogui.screenshot(region=region)
+    screenshot.save("item_name_screenshot.png")  # Save for debugging
+
+    # Use pytesseract to extract text from the image
+    extracted_text = pytesseract.image_to_string(screenshot, config='--psm 6')
+
+    print(f"Extracted item name: {extracted_text}")
+
+    # Preprocess the extracted text to remove unwanted characters
+    extracted_text = re.sub(r'[^a-zA-Z0-9\s]', '', extracted_text)  # Keep only alphanumeric characters and spaces
+
+    print(f"Processed item name: {extracted_text.strip()}")
+
+    # Return the cleaned-up item name
+    return extracted_text.strip() if extracted_text.strip() else None
+
 # Function to adjust buy orders
 def adjust_buy_order(current_price, item_coords):
     
