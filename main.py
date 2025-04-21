@@ -111,7 +111,7 @@ def adjust_buy_order(current_price, item_coords, i):
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 20:
+        if ((market_sell_price * 0.90) - market_buy_price) < 20:                      # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             with open("buy-order-log.txt", "a") as log_file:
@@ -182,13 +182,13 @@ def adjust_sell_order(current_price, item_coords, i):
 
         print(f"Current market price: {market_price}")
 
-        # if ((market_price * 0.90) - last_purchased_price) < 1:                      # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA ()
-        #     print("Profits would be too small if we decrease the price further!")
-        #     keyboard.press_and_release("esc")
-        #     with open("sell-order-log.txt", "a") as log_file:
-        #         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        #         log_file.write(timestamp + " - Profits would be too small if we decrease the price further!\n")
-        #     break
+        if ((market_price * 0.90) - last_purchased_price) < 1:                      # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
+            print("Profits would be too small if we decrease the price further!")
+            keyboard.press_and_release("esc")
+            with open("sell-order-log.txt", "a") as log_file:
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log_file.write(timestamp + " - Profits would be too small if we decrease the price further!\n")
+            break
 
         if market_price < current_price:
             # Calculate the new sell price (subtract 0.01 coins)
