@@ -1,3 +1,8 @@
-2025-04-20 21:04:22 - Buy order adjusted to 2200.11 coins.
-2025-04-20 21:08:16 - Buy order adjusted to 240.04 coins.
-2025-04-20 21:09:58 - Buy order adjusted to 240.1 coins.
+2025-04-21 01:39:10 - Buy order adjusted to 536.45 coins.
+2025-04-21 01:40:37 - Buy order adjusted to 536.48 coins.
+2025-04-21 01:42:27 - Buy order adjusted to 536.51 coins.
+2025-04-21 01:43:13 - Buy order adjusted to 536.5699999999999 coins.
+2025-04-21 01:45:26 - Buy order adjusted to 2225.19 coins.
+2025-04-21 01:53:30 - Buy order adjusted to 2225.21 coins.
+2025-04-21 02:00:58 - Buy order adjusted to 2225.23 coins.
+2025-04-21 02:01:44 - Buy order adjusted to 2225.2700000000004 coins.

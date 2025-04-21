@@ -32,6 +32,7 @@ BUY_PRICE_REGION = (751, 899, 110, 41)   # Buy price field coordinates
 MY_OFFERS_SALE_PRICE_REGION = (970, 369, 121, 45)
 MY_OFFERS_PURCHASE_PRICE_REGION = (1395, 369, 121, 45)
 LAST_PURCHASE_PRICE_REGION = (785, 405, 110, 41)
+ITEM_NAME_REGION = (270, 364, 600, 28)
 
 # Global flag to check if we should stop the script
 stop_script = False
@@ -87,8 +88,11 @@ def read_item_name_from_screen(region=None):
 def load_items_to_skip(file_path="items_to_skip.txt"):
     try:
         with open(file_path, "r") as file:
-            items = file.read().splitlines()
-            return [item.strip() for item in items if item.strip()]
+            content = file.read()
+            items = content.split(",")
+            items_to_skip = [item.strip() for item in items if item.strip()]
+            print("Items to skip:", items_to_skip)  # Print the contents of the list
+            return items_to_skip
     except FileNotFoundError:
         print(f"File {file_path} not found. No items will be skipped.")
         return []
@@ -97,20 +101,11 @@ def load_items_to_skip(file_path="items_to_skip.txt"):
 items_to_skip = load_items_to_skip()
 
 # Function to adjust buy orders
-def adjust_buy_order(current_price, item_coords):
+def adjust_buy_order(current_price, item_coords, i):
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             return
-
-        # Read the item name from the screen
-        item_name = read_item_name_from_screen(region=ITEM_CONTEXT_MENU_COORDS)
-        if item_name in items_to_skip:
-            print(f"Skipping adjustment for item: {item_name}")
-            with open("buy-order-log.txt", "a") as log_file:
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                log_file.write(timestamp + " - Skipping adjustment for item " + item_name + " as per user request\n")
-            break
 
         # Read the current highest buy price from the screen
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
@@ -171,20 +166,11 @@ def adjust_buy_order(current_price, item_coords):
         break
 
 # Function to adjust sell orders
-def adjust_sell_order(current_price, item_coords):
+def adjust_sell_order(current_price, item_coords, i):
     while True:
         if stop_script:  # Check if the script should stop
             print("Stopping script.")
             return
-
-        # Read the item name from the screen
-        item_name = read_item_name_from_screen(region=ITEM_CONTEXT_MENU_COORDS)
-        if item_name in items_to_skip:
-            print(f"Skipping adjustment for item: {item_name}")
-            with open("sell-order-log.txt", "a") as log_file:
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                log_file.write(timestamp + " - Skipping adjustment for item " + item_name + " as per user request\n")
-            break
 
         # Read the current highest buy price from the screen
         market_price = read_price_from_screen(region=SELL_PRICE_REGION)
@@ -196,13 +182,13 @@ def adjust_sell_order(current_price, item_coords):
 
         print(f"Current market price: {market_price}")
 
-        if ((market_price * 0.90) - last_purchased_price) < 1:
-            print("Profits would be too small if we decrease the price further!")
-            keyboard.press_and_release("esc")
-            with open("sell-order-log.txt", "a") as log_file:
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                log_file.write(timestamp + " - Profits would be too small if we decrease the price further!\n")
-            break
+        # if ((market_price * 0.90) - last_purchased_price) < 1:                      # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA ()
+        #     print("Profits would be too small if we decrease the price further!")
+        #     keyboard.press_and_release("esc")
+        #     with open("sell-order-log.txt", "a") as log_file:
+        #         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        #         log_file.write(timestamp + " - Profits would be too small if we decrease the price further!\n")
+        #     break
 
         if market_price < current_price:
             # Calculate the new sell price (subtract 0.01 coins)
@@ -263,10 +249,12 @@ def interact_with_my_offers():
             # Adjust the regions for each iteration
             sale_price_region = (MY_OFFERS_SALE_PRICE_REGION[0], MY_OFFERS_SALE_PRICE_REGION[1] + i * 83, MY_OFFERS_SALE_PRICE_REGION[2], MY_OFFERS_SALE_PRICE_REGION[3])
             purchase_price_region = (MY_OFFERS_PURCHASE_PRICE_REGION[0], MY_OFFERS_PURCHASE_PRICE_REGION[1] + i * 83, MY_OFFERS_PURCHASE_PRICE_REGION[2], MY_OFFERS_PURCHASE_PRICE_REGION[3])
+            itemnameregion = (ITEM_NAME_REGION[0], ITEM_NAME_REGION[1] + i * 83, ITEM_NAME_REGION[2], ITEM_NAME_REGION[3])
 
             sale_price = read_price_from_screen(sale_price_region)
             purchase_price = read_price_from_screen(purchase_price_region)
-
+            item_name = read_item_name_from_screen(region=itemnameregion)
+            
             while isinstance(sale_price, float) and isinstance(purchase_price, float):
                 print("RESCANING THE PRICES!")
                 sale_price = read_price_from_screen(sale_price_region)
@@ -279,7 +267,14 @@ def interact_with_my_offers():
                 pyautogui.click()
                 time.sleep(2)
                 #interact_with_my_offers() // Breaking the loop instead of calling the function recursively to aviod a memory leak and reaching maximum recursion depth
-                break
+                break            
+            
+            if item_name in items_to_skip:
+                print(f"Skipping adjustment for item: {item_name}")
+                with open("skip-order-log.txt", "a") as log_file:
+                    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    log_file.write(timestamp + " - Skipping adjustment for item " + item_name + " as per user request\n")
+                continue
 
             if sale_price is None or not isinstance(sale_price, float):
                 print("ITEM IS BEING BOUGHT")
@@ -311,7 +306,7 @@ def interact_with_my_offers():
 
                 # if current_buy_price != purchase_price:
                 time.sleep(2)
-                adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust buy price based on the sell price
+                adjust_buy_order(purchase_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83), i)  # Adjust buy price based on the sell price
 
             elif purchase_price is None or not isinstance(purchase_price, float):
                 print("ITEM IS BEING SOLD")
@@ -343,7 +338,7 @@ def interact_with_my_offers():
 
                 # if current_sell_price != sale_price:
                 time.sleep(2)
-                adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83))  # Adjust sell price based on the sell price
+                adjust_sell_order(sale_price, (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1] + i * 83), i)  # Adjust sell price based on the sell price
 
             time.sleep(1)  # Wait before moving to the next item
 
@@ -372,6 +367,7 @@ def draw_regions_on_screen():
         "MY_OFFERS_SALE_PRICE_REGION": MY_OFFERS_SALE_PRICE_REGION,
         "MY_OFFERS_PURCHASE_PRICE_REGION": MY_OFFERS_PURCHASE_PRICE_REGION,
         "LAST_PURCHASE_PRICE_REGION": LAST_PURCHASE_PRICE_REGION,
+        "ITEM_NAME REGION": ITEM_NAME_REGION,
         "ITEM_CONTEXT_MENU_COORDS": (ITEM_CONTEXT_MENU_COORDS[0], ITEM_CONTEXT_MENU_COORDS[1], 1, 1),
         "TRADE_BUTTON_COORDS": (TRADE_BUTTON_COORDS[0], TRADE_BUTTON_COORDS[1], 1, 1),
         "PRICE_FIELD_COORDS": (PRICE_FIELD_COORDS[0], PRICE_FIELD_COORDS[1], 1, 1),
