@@ -77,7 +77,7 @@ def read_item_name_from_screen(region=None):
     print(f"Extracted item name: {extracted_text}")
 
     # Preprocess the extracted text to remove unwanted characters
-    extracted_text = re.sub(r'[^a-zA-Z0-9\s]', '', extracted_text)  # Keep only alphanumeric characters and spaces
+    extracted_text = re.sub(r'[^a-zA-Z0-9\s-]', '', extracted_text)  # Keep only alphanumeric characters, spaces, and dashes
 
     print(f"Processed item name: {extracted_text.strip()}")
 
