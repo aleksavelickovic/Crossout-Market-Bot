@@ -1,0 +1,770 @@
+2025-04-25 18:29:04 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:29:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:30:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:30:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:31:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:32:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:33:13 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:33:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:34:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:35:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:35:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:37:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:37:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:38:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:39:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:39:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:40:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:41:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:42:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:43:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:44:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:44:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:45:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:46:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:46:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:47:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:48:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:48:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:49:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:50:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:51:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:52:12 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:52:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:53:45 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:54:17 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:55:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:55:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:56:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:57:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:58:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 18:59:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:00:04 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:00:45 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:01:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:02:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:03:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:03:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:04:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:05:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:06:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:07:25 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:08:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:09:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:09:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:10:53 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:11:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:12:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:13:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:14:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:15:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:16:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:17:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:18:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:19:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:19:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:20:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:21:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:21:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:22:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:23:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:25:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:26:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:27:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:28:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:29:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:30:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:31:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:32:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:33:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:34:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:35:38 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:36:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:37:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:39:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:40:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:40:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:41:45 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:42:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:43:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:44:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:45:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:46:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:47:31 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:48:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:49:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:50:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:50:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:51:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:52:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:53:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:53:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:54:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:54:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:55:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:56:12 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:56:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:57:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:57:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:58:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 19:59:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:00:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:00:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:01:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:01:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:02:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:02:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:03:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:04:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:06:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:06:41 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:07:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:07:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:08:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:08:31 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:09:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:09:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:09:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:10:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:10:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:10:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:11:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:11:42 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:12:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:12:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:13:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:13:31 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:14:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:14:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:15:10 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:15:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:15:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:16:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:16:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:16:53 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:17:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:17:41 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:18:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:18:37 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:19:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:19:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:19:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:20:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:20:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:20:42 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:21:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:21:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:22:10 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:22:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:23:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:23:17 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:23:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:23:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:24:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:24:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:25:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:25:36 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:26:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:26:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:26:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:27:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:27:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:27:42 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:28:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:28:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:29:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:29:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:29:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:30:07 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:30:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:30:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:31:17 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:31:27 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:31:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:32:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:32:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:32:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:32:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:33:05 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:33:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:33:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:34:00 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:34:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:34:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:34:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:35:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:35:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:35:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:36:03 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:36:25 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:36:35 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:36:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:37:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:37:31 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:37:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:38:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:38:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:38:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:39:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:39:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:39:37 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:39:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:40:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:40:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:40:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:41:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:41:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:41:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:41:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:42:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:42:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:43:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:43:12 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:43:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:43:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:44:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:44:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:44:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:44:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:45:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:45:50 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:46:12 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:46:22 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:46:45 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:46:55 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:47:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:47:37 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:48:00 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:48:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:48:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:48:42 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:49:05 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:49:15 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:49:38 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:49:48 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:50:10 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:50:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:50:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:50:53 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:51:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:51:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:51:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:51:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:52:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:52:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:53:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:53:12 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:53:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:53:55 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:54:17 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:54:27 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:54:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:55:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:55:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:55:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:56:05 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:56:15 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:56:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:57:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:57:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:57:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:58:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:58:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:58:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:58:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:59:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:59:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 20:59:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 20:59:59 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:00:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:00:31 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:00:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:01:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:01:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:01:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:02:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:02:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:02:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:02:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:03:13 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:03:23 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:03:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:03:56 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:04:18 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:04:28 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:04:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:05:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:05:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:05:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:05:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:06:05 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:06:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:06:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:07:00 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:07:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:07:42 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:07:52 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:08:14 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:08:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:08:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:08:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:09:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:09:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:09:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:10:02 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:10:25 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:10:35 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:10:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:11:07 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:11:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:11:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:12:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:12:14 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:12:37 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:12:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:13:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:13:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:14:00 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:14:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:14:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:14:42 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:15:05 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:15:15 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:15:38 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:15:47 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:16:10 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:16:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:16:42 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:16:52 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:17:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:17:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:17:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:17:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:18:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:18:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:18:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:19:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:19:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:19:34 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:19:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:20:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:20:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:20:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:21:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:21:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:21:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:21:52 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:22:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:22:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:22:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:22:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:23:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:23:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:24:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:24:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:24:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:24:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:25:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:25:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:25:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:25:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:26:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:26:21 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:26:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:27:03 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:27:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:27:36 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:27:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:28:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:28:31 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:28:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:29:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:29:13 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:29:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:29:45 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:30:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:30:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:30:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:31:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:31:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:31:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:31:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:32:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:32:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:32:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:33:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:33:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:33:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:33:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:34:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:34:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:34:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:34:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:35:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:35:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:35:53 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:36:03 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:36:25 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:36:35 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:36:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:37:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:37:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:37:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:38:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:38:13 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:38:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:38:45 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:39:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:39:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:40:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:40:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:40:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:40:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:41:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:41:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:41:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:41:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:42:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:42:22 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:42:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:42:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:43:17 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:43:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:43:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:44:09 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:44:31 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:44:41 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:45:04 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:45:14 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:45:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:45:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:46:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:46:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:46:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:46:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:47:14 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:47:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:47:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:47:56 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:48:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:48:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:48:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:49:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:49:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:49:34 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:49:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:50:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:50:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:50:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:51:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:51:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:51:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:51:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:52:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:52:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:52:38 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:52:48 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:53:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:53:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:53:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:53:53 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:54:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:54:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:54:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:54:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:55:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:55:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:56:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:56:13 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:56:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:56:45 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:57:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:57:17 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:57:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:57:50 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:58:13 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:58:23 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:58:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:59:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:59:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 21:59:37 - Skipping adjustment for item Doom as per user request
+2025-04-25 21:59:59 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:00:09 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:00:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:00:41 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:01:04 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:01:14 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:01:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:01:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:02:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:02:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:02:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:02:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:03:13 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:03:23 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:03:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:03:55 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:04:18 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:04:28 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:04:50 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:05:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:05:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:05:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:05:55 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:06:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:06:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:06:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:07:00 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:07:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:07:42 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:07:52 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:08:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:08:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:08:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:09:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:09:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:09:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:10:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:10:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:10:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:10:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:11:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:11:17 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:11:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:11:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:12:12 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:12:22 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:12:45 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:12:55 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:13:18 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:13:27 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:13:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:14:00 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:14:32 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:14:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:15:05 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:15:15 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:15:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:15:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:16:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:16:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:17:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:17:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:17:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:17:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:18:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:18:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:18:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:18:48 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:19:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:19:22 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:19:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:19:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:20:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:20:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:20:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:21:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:21:31 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:21:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:22:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:22:13 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:22:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:22:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:23:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:23:18 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:23:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:23:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:24:14 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:24:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:24:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:24:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:25:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:25:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:26:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:26:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:26:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:26:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:27:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:27:45 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:28:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:28:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:28:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:28:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:29:14 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:29:23 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:29:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:29:56 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:30:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:30:37 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:31:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:31:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:31:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:31:53 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:32:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:32:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:32:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:32:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:33:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:33:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:33:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:34:02 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:34:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:34:34 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:34:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:35:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:35:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:35:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:36:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:36:12 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:36:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:36:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:37:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:37:17 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:37:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:37:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:38:12 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:38:21 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:38:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:38:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:39:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:39:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:39:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:39:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:40:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:40:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:41:04 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:41:13 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:41:36 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:41:46 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:42:08 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:42:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:42:41 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:42:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:43:13 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:43:23 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:43:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:43:56 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:44:18 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:44:28 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:44:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:45:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:45:23 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:45:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:45:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:46:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:46:28 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:46:38 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:47:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:47:10 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:47:52 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:48:02 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:48:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:48:34 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:48:57 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:49:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:49:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:49:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:50:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:50:20 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:50:43 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:50:53 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:51:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:51:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:51:48 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:51:58 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:52:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:52:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:52:53 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:53:03 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:53:26 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:53:35 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:53:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:54:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:54:30 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:54:40 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:55:03 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:55:12 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:55:35 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:55:45 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:56:07 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:56:17 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:56:40 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:56:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:57:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:57:32 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:57:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:58:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:58:27 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:58:36 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:59:09 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:59:19 - Skipping adjustment for item Doom as per user request
+2025-04-25 22:59:42 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 22:59:51 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:00:14 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:00:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:00:46 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:00:56 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:01:19 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:01:29 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:01:51 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:02:01 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:02:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:02:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:02:56 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:03:06 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:03:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:03:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:04:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:04:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:04:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:04:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:05:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:05:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:05:38 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:05:48 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:06:20 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:06:30 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:06:53 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:07:03 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:07:25 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:07:35 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:10:34 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:10:44 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:11:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:11:25 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:11:58 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:12:08 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:12:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:12:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:13:21 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:13:31 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:14:02 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:14:24 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:14:33 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:15:15 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:15:24 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:15:47 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:15:57 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:16:29 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:16:39 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:17:01 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:17:11 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:17:33 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:17:43 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:18:06 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:18:16 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:18:39 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:18:49 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:19:11 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:19:21 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:19:44 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:19:54 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:20:16 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:20:26 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:20:49 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:20:59 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:21:22 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:21:31 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:21:54 - Skipping adjustment for item Duck treasure as per user request
+2025-04-25 23:22:04 - Skipping adjustment for item Doom as per user request
+2025-04-25 23:22:27 - Skipping adjustment for item Duck treasure as per user request

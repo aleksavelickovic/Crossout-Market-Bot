@@ -41,7 +41,7 @@ stop_script = False
 def read_price_from_screen(region=None):
     # Capture screenshot of the specified region
     screenshot = pyautogui.screenshot(region=region)
-    screenshot.save("screenshot.png")  # Save for debugging
+    # screenshot.save("screenshot.png")  # Save for debugging
 
     # Use pytesseract to extract text (numbers) from the image
     extracted_text = pytesseract.image_to_string(screenshot, config='--psm 6')
