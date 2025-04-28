@@ -287,3 +287,256 @@
 2025-04-27 17:52:30 - Buy order adjusted to 1306.01 coins.
 2025-04-27 17:54:38 - Buy order adjusted to 1306.02 coins.
 2025-04-27 18:03:55 - Buy order adjusted to 1350.01 coins.
+2025-04-27 21:40:39 - Buy order adjusted to 569.01 coins.
+2025-04-27 21:41:21 - Buy order adjusted to 1475.03 coins.
+2025-04-27 21:43:19 - Buy order adjusted to 569.06 coins.
+2025-04-27 21:44:07 - Buy order adjusted to 1475.05 coins.
+2025-04-27 21:45:09 - Buy order adjusted to 569.1 coins.
+2025-04-27 21:47:04 - Buy order adjusted to 569.12 coins.
+2025-04-27 21:49:12 - Buy order adjusted to 569.16 coins.
+2025-04-27 21:51:02 - Buy order adjusted to 569.21 coins.
+2025-04-27 21:53:17 - Buy order adjusted to 569.23 coins.
+2025-04-27 21:56:37 - Buy order adjusted to 569.25 coins.
+2025-04-27 21:57:32 - Buy order adjusted to 569.3 coins.
+2025-04-27 21:58:28 - Buy order adjusted to 569.33 coins.
+2025-04-27 22:00:04 - Buy order adjusted to 570.01 coins.
+2025-04-27 22:00:59 - Buy order adjusted to 570.05 coins.
+2025-04-27 22:01:54 - Buy order adjusted to 570.1 coins.
+2025-04-27 22:03:29 - Buy order adjusted to 570.15 coins.
+2025-04-27 22:05:43 - Buy order adjusted to 570.21 coins.
+2025-04-27 22:07:01 - Buy order adjusted to 570.27 coins.
+2025-04-27 22:07:57 - Buy order adjusted to 570.3199999999999 coins.
+2025-04-27 22:27:05 - Buy order adjusted to 571.01 coins.
+2025-04-27 22:28:37 - Buy order adjusted to 571.05 coins.
+2025-04-27 22:29:43 - Profit would be too small to raise the price!
+2025-04-27 22:30:27 - Buy order adjusted to 572.05 coins.
+2025-04-27 22:31:50 - Buy order adjusted to 573.01 coins.
+2025-04-27 22:32:49 - Buy order adjusted to 573.06 coins.
+2025-04-27 22:33:36 - Buy order adjusted to 580.01 coins.
+2025-04-27 22:34:35 - Buy order adjusted to 580.0699999999999 coins.
+2025-04-27 22:35:13 - Buy order adjusted to 600.01 coins.
+2025-04-27 22:36:42 - Buy order adjusted to 610.01 coins.
+2025-04-27 22:37:34 - Buy order adjusted to 620.01 coins.
+2025-04-27 22:38:29 - Buy order adjusted to 620.05 coins.
+2025-04-27 22:39:11 - Profit would be too small to raise the price!
+2025-04-27 22:39:35 - Profit would be too small to raise the price!
+2025-04-27 22:39:48 - Profit would be too small to raise the price!
+2025-04-27 22:40:02 - Profit would be too small to raise the price!
+2025-04-27 22:40:15 - Profit would be too small to raise the price!
+2025-04-27 22:40:38 - Profit would be too small to raise the price!
+2025-04-27 22:40:52 - Profit would be too small to raise the price!
+2025-04-27 22:41:06 - Profit would be too small to raise the price!
+2025-04-27 22:41:19 - Profit would be too small to raise the price!
+2025-04-27 22:41:33 - Profit would be too small to raise the price!
+2025-04-27 22:41:47 - Profit would be too small to raise the price!
+2025-04-27 22:42:00 - Profit would be too small to raise the price!
+2025-04-27 22:42:14 - Profit would be too small to raise the price!
+2025-04-27 22:42:27 - Profit would be too small to raise the price!
+2025-04-27 22:42:41 - Profit would be too small to raise the price!
+2025-04-27 22:42:54 - Profit would be too small to raise the price!
+2025-04-27 22:43:08 - Profit would be too small to raise the price!
+2025-04-27 22:43:31 - Profit would be too small to raise the price!
+2025-04-27 22:43:45 - Profit would be too small to raise the price!
+2025-04-27 22:43:58 - Profit would be too small to raise the price!
+2025-04-27 22:44:12 - Profit would be too small to raise the price!
+2025-04-27 22:44:26 - Profit would be too small to raise the price!
+2025-04-27 22:44:39 - Profit would be too small to raise the price!
+2025-04-27 22:45:02 - Profit would be too small to raise the price!
+2025-04-27 22:45:16 - Profit would be too small to raise the price!
+2025-04-27 22:45:29 - Profit would be too small to raise the price!
+2025-04-27 22:45:43 - Profit would be too small to raise the price!
+2025-04-27 22:45:57 - Profit would be too small to raise the price!
+2025-04-27 22:46:20 - Profit would be too small to raise the price!
+2025-04-27 22:46:33 - Profit would be too small to raise the price!
+2025-04-27 22:46:47 - Profit would be too small to raise the price!
+2025-04-27 22:47:01 - Profit would be too small to raise the price!
+2025-04-27 22:47:14 - Profit would be too small to raise the price!
+2025-04-27 22:47:37 - Profit would be too small to raise the price!
+2025-04-27 22:48:00 - Profit would be too small to raise the price!
+2025-04-27 22:48:14 - Profit would be too small to raise the price!
+2025-04-27 22:48:37 - Profit would be too small to raise the price!
+2025-04-27 22:48:50 - Profit would be too small to raise the price!
+2025-04-27 22:49:04 - Profit would be too small to raise the price!
+2025-04-27 22:49:18 - Profit would be too small to raise the price!
+2025-04-27 22:49:31 - Profit would be too small to raise the price!
+2025-04-27 22:49:45 - Profit would be too small to raise the price!
+2025-04-27 22:49:58 - Profit would be too small to raise the price!
+2025-04-27 22:50:12 - Profit would be too small to raise the price!
+2025-04-27 22:50:26 - Profit would be too small to raise the price!
+2025-04-27 22:50:49 - Profit would be too small to raise the price!
+2025-04-27 22:51:02 - Profit would be too small to raise the price!
+2025-04-27 22:51:25 - Profit would be too small to raise the price!
+2025-04-27 22:51:39 - Profit would be too small to raise the price!
+2025-04-27 22:51:52 - Profit would be too small to raise the price!
+2025-04-27 22:52:06 - Profit would be too small to raise the price!
+2025-04-27 22:52:20 - Profit would be too small to raise the price!
+2025-04-27 22:52:33 - Profit would be too small to raise the price!
+2025-04-27 22:52:47 - Profit would be too small to raise the price!
+2025-04-27 22:53:10 - Profit would be too small to raise the price!
+2025-04-27 22:53:23 - Profit would be too small to raise the price!
+2025-04-27 22:53:37 - Profit would be too small to raise the price!
+2025-04-27 22:53:51 - Profit would be too small to raise the price!
+2025-04-27 22:54:04 - Profit would be too small to raise the price!
+2025-04-27 22:54:18 - Profit would be too small to raise the price!
+2025-04-27 22:54:31 - Profit would be too small to raise the price!
+2025-04-27 22:54:45 - Profit would be too small to raise the price!
+2025-04-27 22:54:58 - Profit would be too small to raise the price!
+2025-04-27 22:55:12 - Profit would be too small to raise the price!
+2025-04-27 22:55:25 - Profit would be too small to raise the price!
+2025-04-27 22:55:39 - Profit would be too small to raise the price!
+2025-04-27 22:55:53 - Profit would be too small to raise the price!
+2025-04-27 22:56:06 - Profit would be too small to raise the price!
+2025-04-27 22:56:20 - Profit would be too small to raise the price!
+2025-04-27 22:56:33 - Profit would be too small to raise the price!
+2025-04-27 22:56:47 - Profit would be too small to raise the price!
+2025-04-27 22:57:00 - Profit would be too small to raise the price!
+2025-04-27 22:57:14 - Profit would be too small to raise the price!
+2025-04-27 22:57:28 - Profit would be too small to raise the price!
+2025-04-27 22:57:41 - Profit would be too small to raise the price!
+2025-04-27 22:57:55 - Profit would be too small to raise the price!
+2025-04-27 22:58:08 - Profit would be too small to raise the price!
+2025-04-27 22:58:22 - Profit would be too small to raise the price!
+2025-04-27 22:58:36 - Profit would be too small to raise the price!
+2025-04-27 22:58:49 - Profit would be too small to raise the price!
+2025-04-27 22:59:12 - Profit would be too small to raise the price!
+2025-04-27 22:59:26 - Profit would be too small to raise the price!
+2025-04-27 22:59:40 - Profit would be too small to raise the price!
+2025-04-27 22:59:53 - Profit would be too small to raise the price!
+2025-04-27 23:00:16 - Profit would be too small to raise the price!
+2025-04-27 23:00:39 - Profit would be too small to raise the price!
+2025-04-27 23:00:53 - Profit would be too small to raise the price!
+2025-04-27 23:01:06 - Profit would be too small to raise the price!
+2025-04-27 23:01:20 - Profit would be too small to raise the price!
+2025-04-27 23:01:34 - Profit would be too small to raise the price!
+2025-04-27 23:01:47 - Profit would be too small to raise the price!
+2025-04-27 23:02:01 - Profit would be too small to raise the price!
+2025-04-27 23:02:14 - Profit would be too small to raise the price!
+2025-04-27 23:02:28 - Profit would be too small to raise the price!
+2025-04-27 23:02:42 - Profit would be too small to raise the price!
+2025-04-27 23:02:55 - Profit would be too small to raise the price!
+2025-04-27 23:03:09 - Profit would be too small to raise the price!
+2025-04-27 23:03:22 - Profit would be too small to raise the price!
+2025-04-27 23:03:36 - Profit would be too small to raise the price!
+2025-04-27 23:03:59 - Profit would be too small to raise the price!
+2025-04-27 23:04:13 - Profit would be too small to raise the price!
+2025-04-27 23:04:26 - Profit would be too small to raise the price!
+2025-04-27 23:04:40 - Profit would be too small to raise the price!
+2025-04-27 23:04:53 - Profit would be too small to raise the price!
+2025-04-27 23:05:07 - Profit would be too small to raise the price!
+2025-04-27 23:05:20 - Profit would be too small to raise the price!
+2025-04-27 23:05:34 - Profit would be too small to raise the price!
+2025-04-27 23:05:48 - Profit would be too small to raise the price!
+2025-04-27 23:06:01 - Profit would be too small to raise the price!
+2025-04-27 23:06:15 - Profit would be too small to raise the price!
+2025-04-27 23:06:28 - Profit would be too small to raise the price!
+2025-04-27 23:06:51 - Profit would be too small to raise the price!
+2025-04-27 23:07:05 - Profit would be too small to raise the price!
+2025-04-27 23:07:18 - Profit would be too small to raise the price!
+2025-04-27 23:07:32 - Profit would be too small to raise the price!
+2025-04-27 23:07:46 - Profit would be too small to raise the price!
+2025-04-27 23:07:59 - Profit would be too small to raise the price!
+2025-04-27 23:08:13 - Profit would be too small to raise the price!
+2025-04-27 23:08:26 - Profit would be too small to raise the price!
+2025-04-27 23:08:40 - Profit would be too small to raise the price!
+2025-04-27 23:08:53 - Profit would be too small to raise the price!
+2025-04-27 23:09:07 - Profit would be too small to raise the price!
+2025-04-27 23:09:21 - Profit would be too small to raise the price!
+2025-04-27 23:09:44 - Profit would be too small to raise the price!
+2025-04-27 23:09:57 - Profit would be too small to raise the price!
+2025-04-27 23:10:20 - Profit would be too small to raise the price!
+2025-04-27 23:10:34 - Profit would be too small to raise the price!
+2025-04-27 23:10:48 - Profit would be too small to raise the price!
+2025-04-27 23:11:01 - Profit would be too small to raise the price!
+2025-04-27 23:11:15 - Profit would be too small to raise the price!
+2025-04-27 23:11:28 - Profit would be too small to raise the price!
+2025-04-27 23:11:42 - Profit would be too small to raise the price!
+2025-04-27 23:11:56 - Profit would be too small to raise the price!
+2025-04-27 23:12:09 - Profit would be too small to raise the price!
+2025-04-27 23:12:23 - Profit would be too small to raise the price!
+2025-04-27 23:12:36 - Profit would be too small to raise the price!
+2025-04-27 23:12:59 - Profit would be too small to raise the price!
+2025-04-27 23:13:13 - Profit would be too small to raise the price!
+2025-04-27 23:13:27 - Profit would be too small to raise the price!
+2025-04-27 23:13:40 - Profit would be too small to raise the price!
+2025-04-27 23:14:03 - Profit would be too small to raise the price!
+2025-04-27 23:14:17 - Profit would be too small to raise the price!
+2025-04-27 23:14:30 - Profit would be too small to raise the price!
+2025-04-27 23:14:44 - Profit would be too small to raise the price!
+2025-04-27 23:14:57 - Profit would be too small to raise the price!
+2025-04-27 23:15:11 - Profit would be too small to raise the price!
+2025-04-27 23:15:25 - Profit would be too small to raise the price!
+2025-04-27 23:15:38 - Profit would be too small to raise the price!
+2025-04-27 23:15:52 - Profit would be too small to raise the price!
+2025-04-27 23:16:05 - Profit would be too small to raise the price!
+2025-04-27 23:16:19 - Profit would be too small to raise the price!
+2025-04-27 23:16:33 - Profit would be too small to raise the price!
+2025-04-27 23:16:46 - Profit would be too small to raise the price!
+2025-04-27 23:17:00 - Profit would be too small to raise the price!
+2025-04-27 23:17:13 - Profit would be too small to raise the price!
+2025-04-27 23:17:27 - Profit would be too small to raise the price!
+2025-04-27 23:17:41 - Profit would be too small to raise the price!
+2025-04-27 23:17:54 - Profit would be too small to raise the price!
+2025-04-27 23:18:08 - Profit would be too small to raise the price!
+2025-04-27 23:18:21 - Profit would be too small to raise the price!
+2025-04-27 23:18:35 - Profit would be too small to raise the price!
+2025-04-27 23:18:49 - Profit would be too small to raise the price!
+2025-04-27 23:19:02 - Profit would be too small to raise the price!
+2025-04-27 23:19:16 - Profit would be too small to raise the price!
+2025-04-27 23:19:29 - Profit would be too small to raise the price!
+2025-04-27 23:19:43 - Profit would be too small to raise the price!
+2025-04-27 23:19:57 - Profit would be too small to raise the price!
+2025-04-27 23:20:10 - Profit would be too small to raise the price!
+2025-04-27 23:20:24 - Profit would be too small to raise the price!
+2025-04-27 23:20:37 - Profit would be too small to raise the price!
+2025-04-27 23:21:00 - Profit would be too small to raise the price!
+2025-04-27 23:21:14 - Profit would be too small to raise the price!
+2025-04-27 23:21:28 - Profit would be too small to raise the price!
+2025-04-27 23:21:51 - Profit would be too small to raise the price!
+2025-04-27 23:24:19 - Buy order adjusted to 620.11 coins.
+2025-04-27 23:26:08 - Buy order adjusted to 620.13 coins.
+2025-04-27 23:26:46 - Buy order adjusted to 620.15 coins.
+2025-04-27 23:28:45 - Buy order adjusted to 620.1899999999999 coins.
+2025-04-28 00:12:51 - Buy order adjusted to 1810.01 coins.
+2025-04-28 00:14:17 - Buy order adjusted to 1475.92 coins.
+2025-04-28 00:48:40 - Buy order adjusted to 1810.03 coins.
+2025-04-28 00:49:50 - Buy order adjusted to 1480.01 coins.
+2025-04-28 00:50:36 - Buy order adjusted to 1810.08 coins.
+2025-04-28 00:52:12 - Buy order adjusted to 1810.12 coins.
+2025-04-28 00:52:57 - Buy order adjusted to 1810.16 coins.
+2025-04-28 00:54:54 - Buy order adjusted to 1810.21 coins.
+2025-04-28 00:56:11 - Buy order adjusted to 1810.23 coins.
+2025-04-28 00:57:45 - Buy order adjusted to 1481.01 coins.
+2025-04-28 00:58:13 - Buy order adjusted to 1810.27 coins.
+2025-04-28 00:58:58 - Buy order adjusted to 1810.29 coins.
+2025-04-28 01:00:33 - Buy order adjusted to 1481.12 coins.
+2025-04-28 01:01:00 - Buy order adjusted to 1810.32 coins.
+2025-04-28 01:02:04 - Buy order adjusted to 1482.23 coins.
+2025-04-28 01:02:31 - Buy order adjusted to 1810.34 coins.
+2025-04-28 01:03:04 - Buy order adjusted to 1483.34 coins.
+2025-04-28 01:04:20 - Buy order adjusted to 1484.45 coins.
+2025-04-28 01:04:47 - Buy order adjusted to 1810.36 coins.
+2025-04-28 01:05:51 - Buy order adjusted to 1485.56 coins.
+2025-04-28 01:06:36 - Buy order adjusted to 1486.67 coins.
+2025-04-28 01:07:04 - Buy order adjusted to 1810.3799999999999 coins.
+2025-04-28 01:07:36 - Buy order adjusted to 1487.78 coins.
+2025-04-28 01:08:22 - Buy order adjusted to 1488.89 coins.
+2025-04-28 01:09:08 - Buy order adjusted to 1490.0 coins.
+2025-04-28 01:10:34 - Buy order adjusted to 1500.01 coins.
+2025-04-28 01:16:30 - Buy order adjusted to 1510.01 coins.
+2025-04-28 01:17:57 - Buy order adjusted to 1520.01 coins.
+2025-04-28 01:29:03 - Buy order adjusted to 1525.01 coins.
+2025-04-28 01:29:30 - Buy order adjusted to 1810.41 coins.
+2025-04-28 01:30:16 - Buy order adjusted to 1810.45 coins.
+2025-04-28 01:31:33 - Buy order adjusted to 1810.49 coins.
+2025-04-28 01:32:50 - Buy order adjusted to 1810.55 coins.
+2025-04-28 01:34:06 - Buy order adjusted to 1810.57 coins.
+2025-04-28 01:36:34 - Buy order adjusted to 1810.62 coins.
+2025-04-28 01:38:53 - Buy order adjusted to 1810.64 coins.
+2025-04-28 01:41:21 - Buy order adjusted to 1810.67 coins.
+2025-04-28 01:43:09 - Buy order adjusted to 1810.72 coins.
+2025-04-28 04:26:15 - Buy order adjusted to 1305.08 coins.
+2025-04-28 15:06:59 - Buy order adjusted to 1265.03 coins.
+2025-04-28 15:25:54 - Buy order adjusted to 1266.01 coins.
+2025-04-28 15:32:12 - Buy order adjusted to 1266.03 coins.
+2025-04-28 18:09:12 - Buy order adjusted to 1300.01 coins.
+2025-04-28 18:21:54 - Buy order adjusted to 1350.01 coins.
