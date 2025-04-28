@@ -182,7 +182,7 @@ def adjust_sell_order(current_price, item_coords, i):
 
         print(f"Current market price: {market_price}")
 
-        if ((market_price * 0.90) - last_purchased_price) < 1:                      #  VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
+        if ((market_price * 0.90) - last_purchased_price) < 1:                      # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
             print("Profits would be too small if we decrease the price further!")
             keyboard.press_and_release("esc")
             with open("sell-order-log.txt", "a") as log_file:
