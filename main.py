@@ -110,6 +110,11 @@ def adjust_buy_order(current_price, item_coords, i):
         # Read the current highest buy price from the screen
         market_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
         market_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
+        
+        if market_buy_price is None:
+            print("Could not read market price. Skipping adjustment.")
+            keyboard.press_and_release("esc")
+            break
 
         if ((market_sell_price * 0.90) - market_buy_price) < 25:                 # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
             print("Profit would be too small to raise the price!")
@@ -117,11 +122,6 @@ def adjust_buy_order(current_price, item_coords, i):
             with open("buy-order-log.txt", "a") as log_file:
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 log_file.write(timestamp + " - Profit would be too small to raise the price!\n")
-            break
-
-        if market_buy_price is None:
-            print("Could not read market price. Skipping adjustment.")
-            keyboard.press_and_release("esc")
             break
 
         print(f"Current market price: {market_buy_price}")
@@ -175,6 +175,7 @@ def adjust_sell_order(current_price, item_coords, i):
         # Read the current highest buy price from the screen
         market_price = read_price_from_screen(region=SELL_PRICE_REGION)
         last_purchased_price = read_price_from_screen(region=LAST_PURCHASE_PRICE_REGION)
+        
         if market_price is None:
             print("Could not read market price. Skipping adjustment.")
             keyboard.press_and_release("esc")
