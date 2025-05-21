@@ -393,6 +393,6 @@ def draw_regions_on_screen():
     cv2.destroyAllWindows()
 
 # Call the function to draw regions on the screen
-draw_regions_on_screen()
+# draw_regions_on_screen()
 # Start interacting with offers
 interact_with_my_offers()
