@@ -50,6 +50,8 @@ def read_price_from_screen(region=None):
 
     # Preprocess the extracted text to remove unwanted characters (like spaces or non-numeric symbols)
     extracted_text = re.sub(r'[^0-9.,]', '', extracted_text)  # Keep only numbers, commas, or periods
+    # Remove dots only if they are at the end of the number
+    extracted_text = re.sub(r'\.+$', '', extracted_text)
 
     print(f"Processed text: {extracted_text}")
 
@@ -116,7 +118,7 @@ def adjust_buy_order(current_price, item_coords, i):
             keyboard.press_and_release("esc")
             break
 
-        if ((market_sell_price * 0.90) - market_buy_price) < 25:                 # VRATITI U PRVOBITNO STANJE NAKON PRODVANJA IZABRANOG DELA (VRACENO)
+        if ((market_sell_price * 0.90) - market_buy_price) < 25:                 # VRATITI U PRVOBITNO STANJE NAKON KUPOVINE IZABRANOG DELA (VRACENO)
             print("Profit would be too small to raise the price!")
             keyboard.press_and_release("esc")
             with open("buy-order-log.txt", "a") as log_file:
@@ -391,6 +393,6 @@ def draw_regions_on_screen():
     cv2.destroyAllWindows()
 
 # Call the function to draw regions on the screen
-# draw_regions_on_screen()
+draw_regions_on_screen()
 # Start interacting with offers
 interact_with_my_offers()
