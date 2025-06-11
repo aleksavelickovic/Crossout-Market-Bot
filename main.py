@@ -300,10 +300,10 @@ def interact_with_my_offers():
                 current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
                 current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
 
-                if current_sell_price is None or current_buy_price is None:
-                    print(f"Couldn't read price for item {i + 1}. Skipping item.")
-                    keyboard.press_and_release("esc")
-                    continue
+                # if current_sell_price is None or current_buy_price is None:
+                #     print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                #     keyboard.press_and_release("esc")
+                #     continue
 
                 print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
 
@@ -332,10 +332,10 @@ def interact_with_my_offers():
                 current_sell_price = read_price_from_screen(region=SELL_PRICE_REGION)
                 current_buy_price = read_price_from_screen(region=BUY_PRICE_REGION)
 
-                if current_sell_price is None or current_buy_price is None:
-                    print(f"Couldn't read price for item {i + 1}. Skipping item.")
-                    keyboard.press_and_release("esc")
-                    continue
+                # if current_sell_price is None or current_buy_price is None:
+                #     print(f"Couldn't read price for item {i + 1}. Skipping item.")
+                #     keyboard.press_and_release("esc")
+                #     continue
 
                 print(f"Item {i + 1} sell price: {current_sell_price}, buy price: {current_buy_price}")
 
